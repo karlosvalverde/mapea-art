@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Task;
 
 class TaskController extends Controller
 {
@@ -20,7 +21,7 @@ class TaskController extends Controller
     public function index(Request $request, Task $task) {
         // get all the tasks based on the current user id
         $allTasks = $task->whereIn('user_id', $request->user())->with('user');
-        $tasks = $allTasks->orderBy('created_at', 'desc')->take(10)->get();
+        $tasks = $allTasks->orderBy('created_at', 'asc')->take(100)->get();
 
         // return json response
         return response()->json([
