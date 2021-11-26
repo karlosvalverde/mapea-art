@@ -10,10 +10,11 @@ export default class App extends Component {
             name: '',
             tasks: []
         };
-        // bind
+        // binds
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.renderTasks = this.renderTasks.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
     // handle change
@@ -48,12 +49,30 @@ export default class App extends Component {
             });
     }
 
+    // handle delete
+    handleDelete(id) {
+        // remove from local state
+        const isNotId = task => task.id !== id;
+        const updateTasks = this.state.tasks.filter(isNotId);
+        this.setState({ tasks: updateTasks });
+        // delete request to the backend
+        axios.delete(`/tasks/${id}`);
+    }
+
     // render tasks
     renderTasks() {
         return this.state.tasks.map(task => (
             <div key={task.id} className="media">
                 <div className="media-body">
-                    <p>{task.id} - {task.name}</p>
+                    <p>
+                        {task.id} - {task.name}{' '}
+                        <button
+                            onClick={() => this.handleDelete(task.id)}
+                            className="btn btn-sm btn-outline-danger float-right"
+                        >
+                            Delete
+                        </button>
+                    </p>
                 </div>
             </div>
         ));
