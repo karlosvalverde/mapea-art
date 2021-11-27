@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
+// import ReactDOM from 'react-dom';
 import TestComponent from './TestComponent';
 
 export default class App extends Component {
@@ -66,6 +67,23 @@ export default class App extends Component {
                 <div className="media-body">
                     <p>
                         {task.id} - {task.name}{' '}
+                        <span className="text-muted">
+                            {' '}<br/>
+                            by {task.user.name} |{' '}
+                            {task.updated_at
+                                .split(' ')
+                                .slice(1)
+                                .join(' ')
+                            }
+                        </span>
+                        {/* Edit Task */}
+                        <Link
+                            className="btn btn-sm btn-outline-primary"
+                            to={`/${task.id}/edit`}
+                        >
+                            Edit
+                        </Link>
+                        {/* Delete Task */}
                         <button
                             onClick={() => this.handleDelete(task.id)}
                             className="btn btn-sm btn-outline-danger float-right"
@@ -105,7 +123,6 @@ export default class App extends Component {
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-header">Create Task</div>
-
                             <div className="card-body">
                                 <form onSubmit={this.handleSubmit}>
                                     <div className="form-group">

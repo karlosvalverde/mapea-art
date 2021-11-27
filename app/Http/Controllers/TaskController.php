@@ -79,7 +79,10 @@ class TaskController extends Controller
      */
     public function edit($id)
     {
-        //
+        $task = Task::findOrFail($id);
+        return response()->json([
+            'task' => $task,
+        ]);
     }
 
     /**
@@ -91,7 +94,10 @@ class TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $input = $request->all();
+        $task = Task::findOrFail($id);
+        $task->update($input);
+        return response()->json($task->with('user')->find($task->id));
     }
 
     /**
