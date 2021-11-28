@@ -13,11 +13,20 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0 vh-100">
-        <div class="row bg-primary no-gutters p-5">
-            <h1>Mapeamento de pesquisadores em arte no contexto brasilero</h1>
+    <div class="container-fluid bg-primary vh-100 overflow-hidden">
+        <div class="row h-100">
+            <div class="row p-5 h-100">
+                <div class="col-6">
+                    <h1>Mapeamento de pesquisadores em arte no contexto brasilero</h1>
+                </div>
+                <div class="col-6 h-100 overflow-auto">
+                    <div id="root"></div>
+                </div>
+            </div>
         </div>
-        <div class="row no-gutters h-100">
+
+
+        {{-- <div class="row no-gutters h-100">
             <div class="col-6 p-5 bg-primary">
                 <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
                 <TestComponent/>
@@ -29,7 +38,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-        </div>
+        </div> --}}
 
     </div>
 </body>

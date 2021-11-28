@@ -11,9 +11,8 @@ if (document.getElementById("root")) {
             <div>
                 <Routes>
                     <Route exact path="/:id/edit" element={<TaskEdit/>}/>
-                    <Route exact path="/home" element={<App/>}/>
+                    <Route exact path="/" element={<App/>}/>
                 </Routes>
-
             </div>
         </BrowserRouter>,
         document.getElementById("root")
