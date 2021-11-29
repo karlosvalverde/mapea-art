@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-6 h-100 overflow-auto">
                     <div class="container bg-secondary shadow p-3">
-                        <div class="row sticky-top">
+                        <div class="sticky-top d-flex justify-content-center align-self-center p-2">
                             {{ $researchers->links("pagination::bootstrap-4") }}
                         </div>
                         <div class="row">

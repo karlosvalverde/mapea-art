@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Researcher;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,19 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\ResearcherController::class, 'index'])->name('app');
 Route::get('/api', [App\Http\Controllers\ResearcherController::class, 'api'])->name('app');
+Route::get('/api/{id}', function($id) {
+    return Researcher::findOrFail($id);
+});
+// Gets Researcher by University
+Route::get('/api/university/{university}', function($university) {
+    return Researcher::findOrFail($university)::all();
+    // return Researcher::where('university', $university)->simplePaginate(
+    //     10,
+    //     ['name'],
+    //     'page',
+    //     $page
+    // );
+});
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // Route::resource('researchers', 'App\Http\Controllers\ResearcherController');
 Route::resource('tasks', 'App\Http\Controllers\TaskController');

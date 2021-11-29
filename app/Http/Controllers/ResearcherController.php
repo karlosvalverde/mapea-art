@@ -39,6 +39,15 @@ class ResearcherController extends Controller
         ]);
     }
 
+    public function filter(Request $request, Researcher $researcher)
+    {
+        // Search for a researcher based on its name
+        if ($request->has('name')) {
+            return $researcher->where('name', $request->input('name')->get());
+        }
+
+    }
+
     /**
         * Show the form for creating a new resource.
         *
