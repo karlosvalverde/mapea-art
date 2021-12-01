@@ -27,18 +27,22 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\ResearcherController::class, 'index'])->name('app');
 Route::get('/api', [App\Http\Controllers\ResearcherController::class, 'api'])->name('app');
 Route::get('/api/{id}', function($id) {
-    return Researcher::findOrFail($id);
+    return Researcher::findOrFail(
+        $id,
+        ['name','state'],
+    );
 });
 // Gets Researcher by University
-Route::get('/api/university/{university}', function($university) {
-    return Researcher::findOrFail($university)::all();
-    // return Researcher::where('university', $university)->simplePaginate(
-    //     10,
-    //     ['name'],
-    //     'page',
-    //     $page
-    // );
+Route::get('/api/university/{university}/{page}', function($university, $page) {
+    // return Researcher::where('university', $university)::all();
+    return Researcher::findOrFail('university', $university)->simplePaginate(
+        10,
+        ['name','state'],
+        'page',
+        $page
+    );
 });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::resource('researchers', 'App\Http\Controllers\ResearcherController');
+Route::resource('researchers', 'App\Http\Controllers\ResearcherController');
+// Route::get('researchers/{id}', [App\Http\Controllers\ResearcherController::class, 'show'])->name('researchers.show');
 Route::resource('tasks', 'App\Http\Controllers\TaskController');

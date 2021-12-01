@@ -15,9 +15,9 @@ class ResearcherController extends Controller
     // public function index(Request $request, Researcher $researcher)
     public function index(Request $request, Researcher $researcher)
     {
-        // Get all researchers, with a 100 entry pagination
+        // Get all researchers, with a 25 entry pagination
         // $allResearchers = $task->whereIn('user_id', $request->user())->with('user');
-        $researchers = $researcher->orderBy('id', 'asc')->paginate(100);
+        $researchers = $researcher->orderBy('id', 'asc')->paginate(25);
 
         // return json response
         // return response()->json([
@@ -29,9 +29,9 @@ class ResearcherController extends Controller
 
     public function api(Request $request, Researcher $researcher)
     {
-        // Get all researchers, with a 100 entry pagination
+        // Get all researchers, with a 25 entry pagination
         // $allResearchers = $task->whereIn('user_id', $request->user())->with('user');
-        $researchers = $researcher->orderBy('id', 'asc')->paginate(100);
+        $researchers = $researcher->orderBy('id', 'asc')->paginate(25);
 
         // return json response
         return response()->json([
@@ -76,7 +76,13 @@ class ResearcherController extends Controller
         */
     public function show($id)
     {
-        //
+        // dd($id);
+        // Get researcher
+        $researcher = Researcher::findOrFail($id);
+
+        // Show the view and pass the researcher to it
+        return view('researchers.show', ['researcher' => $researcher]);
+            // ->with('researcher', $researcher);
     }
 
     /**
