@@ -36,7 +36,7 @@
                                     {{$researcher->contact}}
                                 </p>
                                 <p><span class="fw-bold">Web:</span><br/>
-                                    <a href="{{$researcher->web}}">{{$researcher->web}}</a>
+                                    <a href="{{$researcher->web}}" target="_blank">{{$researcher->web}}</a>
                                 </p>
                                 <p><span class="fw-bold">Universidade:</span><br/>
                                     {{$researcher->university}}
@@ -53,7 +53,6 @@
                             </div>
                         </div>
                     </div>
-                    {{-- <div id="root"></div> --}}
                 </div>
             </div>
         </div>

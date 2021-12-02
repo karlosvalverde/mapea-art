@@ -39,6 +39,20 @@ class ResearcherController extends Controller
         ]);
     }
 
+    public function search(Request $request)
+    {
+        // Get the search value from the request
+        $search = $request->input('search');
+
+        // Search in the name column
+        $researchers = Researcher::query()
+            ->where('name', 'LIKE', "%{$search}%")
+            ->get();
+
+        return view('app', compact('researchers'));
+
+    }
+
     public function filter(Request $request, Researcher $researcher)
     {
         // Search for a researcher based on its name

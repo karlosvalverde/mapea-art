@@ -25,20 +25,24 @@
                             {{ $researchers->links("pagination::bootstrap-4") }}
                         </div>
                         <div class="row h-100 mb-5">
-                            @foreach ($researchers as $researcher)
-                            <div class="">
-                                <a href="{{ URL::to('researchers/' . $researcher->id) }}">
-                                    {{ $researcher->name }}
-                                </a>
-                                {{-- <th>{{$researcher->state}}</th>
-                                <th>{{$researcher->contact}}</th>
-                                <th>{{$researcher->web}}</th>
-                                <th>{{$researcher->university}}</th>
-                                <th>{{$researcher->role}}</th>
-                                <th>{{$researcher->research_field}}</th>
-                                <th>{{$researcher->keywords}}</th> --}}
+                            {{-- Researchers --}}
+                            <div class="col-6">
+                                @foreach ($researchers as $researcher)
+                                <div class="">
+                                    <a href="{{ URL::to('researchers/' . $researcher->id) }}">
+                                        {{ $researcher->name }}
+                                    </a>
+                                </div>
+                                @endforeach
                             </div>
-                            @endforeach
+                            {{-- Search --}}
+                            <div class="col-6">
+                                @section('search')
+                                Is a test
+                                @show
+
+                                {{-- @yield('search') --}}
+                            </div>
                         </div>
                     </div>
                     {{-- <div id="root"></div> --}}

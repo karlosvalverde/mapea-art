@@ -19,13 +19,13 @@ Route::get('/', function () {
     // $mapeamento = DB::table('mapeamento')->get();
 
     // return view('app', ['researchers' => $researchers]);
-    return view('app');
+    return view('researchers.search');
 });
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\ResearcherController::class, 'index'])->name('app');
-Route::get('/api', [App\Http\Controllers\ResearcherController::class, 'api'])->name('app');
+Route::get('/', [App\Http\Controllers\ResearcherController::class, 'index','search'])->name('app');
+Route::get('/api', [App\Http\Controllers\ResearcherController::class, 'api'])->name('api');
 Route::get('/api/{id}', function($id) {
     return Researcher::findOrFail(
         $id,
