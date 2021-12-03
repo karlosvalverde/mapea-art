@@ -24,7 +24,7 @@ class ResearcherController extends Controller
         //     'researchers' => $researchers,
         // ]);
 
-        return view('app', ['researchers' => $researchers]);
+        return view('researchers.index', ['researchers' => $researchers]);
     }
 
     public function api(Request $request, Researcher $researcher)
@@ -49,7 +49,7 @@ class ResearcherController extends Controller
             ->where('name', 'LIKE', "%{$search}%")
             ->get();
 
-        return view('app', compact('researchers'));
+        return view('layouts.app', compact('researchers'));
 
     }
 
