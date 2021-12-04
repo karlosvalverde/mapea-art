@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <div id="index"></div>
+    {{-- React entry point --}}
+    {{-- <div id="index"></div> --}}
     {{-- <div class="container-fluid bg-primary vh-100 overflow-hidden">
         <div class="row h-100">
             <div class="row p-5 h-100">

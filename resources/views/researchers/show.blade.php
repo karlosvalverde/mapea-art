@@ -1,4 +1,4 @@
-{{-- <!doctype html>
+<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -22,9 +22,9 @@
                 <div class="col-6 h-100 no-gutters">
                     <div class="container bg-secondary shadow h-100 overflow-auto p-5">
                         <div class="row mb-3 bg-secondary w-100 sticky-top">
-                            <a href="{{ URL::to('researchers') }}">&larr; Voltar</a>
+                            <a href="{{ URL::to('/') }}">&larr; Voltar</a>
                         </div>
-                        <div class="row"> --}}
+                        <div class="row">
                             <div class="text-break">
                                 <p><span class="fw-bold">Nome:</span><br/>
                                     {{$researcher->name}}
@@ -51,11 +51,11 @@
                                     {{$researcher->keywords}}
                                 </p>
                             </div>
-                        {{-- </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-</html> --}}
+</html>

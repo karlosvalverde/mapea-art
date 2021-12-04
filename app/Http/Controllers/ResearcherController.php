@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Database\Query\Builder;
 use App\Models\Researcher;
+use Spatie\Searchable\Search;
 
 class ResearcherController extends Controller
 {
@@ -24,7 +26,7 @@ class ResearcherController extends Controller
         //     'researchers' => $researchers,
         // ]);
 
-        return view('researchers.index', ['researchers' => $researchers]);
+        return view('layouts.app', ['researchers' => $researchers]);
     }
 
     public function api(Request $request, Researcher $researcher)
@@ -40,16 +42,30 @@ class ResearcherController extends Controller
     }
 
     public function search(Request $request)
+    // public function search(Request $request, $search = "")
     {
-        // Get the search value from the request
-        $search = $request->input('search');
+        // // Get the search value from the request
+        // $search = $request->input('search');
 
-        // Search in the name column
-        $researchers = Researcher::query()
-            ->where('name', 'LIKE', "%{$search}%")
-            ->get();
+        // // Search in the name column
+        // $researchers = Researcher::query()
+        //     ->where('name', 'LIKE', "%{$search}%")
+        //     ->get();
 
-        return view('layouts.app', compact('researchers'));
+        // return view('layouts.app', compact('researchers'));
+        // if ($request->wantsJson()) {
+        //     // return response()-json(Researcher::search($search));
+        //     return response()-json(Researcher::whereFuzzy("name", $search)->first()->name);
+        // } else {
+        //     abort(403);
+        // }
+
+        $searchResults = (new Search())
+            ->registerModel(Researcher::class, 'name')
+            ->perform($request->input('query'));
+
+        return view('researchers.search', compact('searchResults'));
+
 
     }
 

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app') --}}
 
 @foreach ($researchers as $researcher)
 <div class="">

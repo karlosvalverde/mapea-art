@@ -24,13 +24,13 @@ import Main from "./router"
 //     );
 // }
 
-class Index extends Component {
-    render() {
-        return (
-            <BrowserRouter>
-                <Route component={{Main}}/>
-            </BrowserRouter>
-        );
-    }
-}
-ReactDOM.render(<Main/>, document.getElementById("index"));
+// class Index extends Component {
+//     render() {
+//         return (
+//             <BrowserRouter>
+//                 <Route component={{Main}}/>
+//             </BrowserRouter>
+//         );
+//     }
+// }
+// ReactDOM.render(<Index/>, document.getElementById("index"));
