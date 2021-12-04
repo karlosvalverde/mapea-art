@@ -41,9 +41,85 @@ class ResearcherController extends Controller
         ]);
     }
 
-    public function search(Request $request)
+    public function searchByName($search)
+    {
+        $result = Researcher::where("name", "LIKE", "%" . $search . "%")->get();
+
+        if (count($result)) {
+            return response()->json($result);
+        } else {
+            return response()->json(["Result" => "No data - Not found"], 404);
+        }
+    }
+
+    public function searchByState($search)
+    {
+        $result = Researcher::where("state", "LIKE", "%" . $search . "%")->get();
+
+        if (count($result)) {
+            return response()->json($result);
+        } else {
+            return response()->json(["Result" => "No data - Not found"], 404);
+        }
+    }
+
+    public function searchByUniversity($search)
+    {
+        $result = Researcher::where("university", "LIKE", "%" . $search . "%")->get();
+
+        if (count($result)) {
+            return response()->json($result);
+        } else {
+            return response()->json(["Result" => "No data - Not found"], 404);
+        }
+    }
+
+    public function searchByRole($search)
+    {
+        $result = Researcher::where("role", "LIKE", "%" . $search . "%")->get();
+
+        if (count($result)) {
+            return response()->json($result);
+        } else {
+            return response()->json(["Result" => "No data - Not found"], 404);
+        }
+    }
+
+    public function searchByResearchField($search)
+    {
+        $result = Researcher::where("research_field", "LIKE", "%" . $search . "%")->get();
+
+        if (count($result)) {
+            return response()->json($result);
+        } else {
+            return response()->json(["Result" => "No data - Not found"], 404);
+        }
+    }
+
+    public function searchByKeywords($search)
+    {
+        $result = Researcher::where("keywords", "LIKE", "%" . $search . "%")->get();
+
+        if (count($result)) {
+            return response()->json($result);
+        } else {
+            return response()->json(["Result" => "No data - Not found"], 404);
+        }
+    }
+
+    public function search($search)
+    // public function search(Request $request)
     // public function search(Request $request, $search = "")
     {
+        // $result = Researcher::when()
+        // where("state", "LIKE", "%" . $search . "%")->get();
+        // $name = Researcher::where("name", "LIKE", "%" . $search . "%")->get();
+
+        // if (count($result)) {
+        //     return response()->json($result);
+        // } else {
+        //     return response()->json(["Result" => "No data - Not found"], 404);
+        // }
         // // Get the search value from the request
         // $search = $request->input('search');
 

@@ -17,6 +17,17 @@ class Researcher extends Model implements Searchable
      */
     protected $table = "mapeamento";
     protected $primaryKey = "id";
+    protected $fillable = [
+        "id",
+        "name",
+        "state",
+        "contact",
+        "web",
+        "university",
+        "role",
+        "research_field",
+        "keywords"
+    ];
 
     // public static function search(string $search) {
     //     $columns = ["id", "name", "state", "contact", "web", "university", "role", "research_field", "keywords"];
@@ -35,9 +46,9 @@ class Researcher extends Model implements Searchable
     //     }
     // }
 
-    protected $fillable = [
-        'name'
-    ];
+    // protected $fillable = [
+    //     'name'
+    // ];
 
     public function getSearchResult(): SearchResult
     {
