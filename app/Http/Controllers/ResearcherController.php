@@ -111,7 +111,7 @@ class ResearcherController extends Controller
         $researcher = Researcher::findOrFail($id);
 
         // Show the view and pass the researcher to it
-        return view('researchers.show', ['researcher' => $researcher]);
+        return view('components.detail', [$researcher => "researcher"]);
             // ->with('researcher', $researcher);
     }
 
