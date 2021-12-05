@@ -32,7 +32,6 @@ class ResearcherController extends Controller
     public function api(Request $request, Researcher $researcher)
     {
         // Get all researchers, with a 25 entry pagination
-        // $allResearchers = $task->whereIn('user_id', $request->user())->with('user');
         $researchers = $researcher->orderBy('id', 'asc')->paginate(25);
 
         // return json response
