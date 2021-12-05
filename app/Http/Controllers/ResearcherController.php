@@ -107,7 +107,7 @@ class ResearcherController extends Controller
         }
     }
 
-    public function search($search)
+    public function search(Researcher $researcher)
     // public function search(Request $request)
     // public function search(Request $request, $search = "")
     {
@@ -136,11 +136,18 @@ class ResearcherController extends Controller
         //     abort(403);
         // }
 
-        $searchResults = (new Search())
-            ->registerModel(Researcher::class, 'name')
-            ->perform($request->input('query'));
+        // $searchResults = (new Search())
+        //     ->registerModel(Researcher::class, 'name')
+        //     ->perform($request->input('query'));
 
-        return view('researchers.search', compact('searchResults'));
+        $researchers = $researcher->get();
+
+        // return json response
+        // return response()->json([
+        //     'researchers' => $researchers,
+        // ]);
+
+        return view('researchers.search', ['researchers' => $researchers]);
 
 
     }
@@ -187,7 +194,8 @@ class ResearcherController extends Controller
         $researcher = Researcher::findOrFail($id);
 
         // Show the view and pass the researcher to it
-        return view('components.detail', [$researcher => "researcher"]);
+        // return view('components.detail', [$researcher => "researcher"]);
+        return view('researchers.show', ["researcher" => $researcher]);
             // ->with('researcher', $researcher);
     }
 

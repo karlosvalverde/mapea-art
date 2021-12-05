@@ -50,6 +50,6 @@ Route::get("/search", [App\Http\Controllers\ResearcherController::class, 'search
 //     );
 // });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::resource('researchers', 'App\Http\Controllers\ResearcherController');
+Route::resource('researchers', 'App\Http\Controllers\ResearcherController');
 Route::get('researchers/{id}', [App\Http\Controllers\ResearcherController::class, 'index','show'])->name('show');
 Route::resource('tasks', 'App\Http\Controllers\TaskController');

@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class Search extends Component
 {
+    public $researchers;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($researchers)
     {
-        //
+        $this->researchers = $researchers;
     }
 
     /**

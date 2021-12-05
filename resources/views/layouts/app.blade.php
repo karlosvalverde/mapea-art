@@ -18,7 +18,7 @@
             <div class="row p-5 h-100">
                 <div class="col-6 mr-5">
                     <x-header/>
-                    <x-search/>
+                    <x-search :researchers="$researchers"/>
                 </div>
                 <div class="col-6 h-100 no-gutters">
                     <div class="container bg-secondary shadow h-100 overflow-auto p-5">

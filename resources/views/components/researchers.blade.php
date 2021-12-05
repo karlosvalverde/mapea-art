@@ -13,7 +13,7 @@
         @endforeach
     </div>
     {{-- Detail --}}
-    <div class="col-6">
+    {{-- <div class="col-6">
         <x-detail :researcher="$researcher"/>
-    </div>
+    </div> --}}
 </div>
