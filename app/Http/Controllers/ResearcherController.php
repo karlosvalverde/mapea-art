@@ -29,7 +29,7 @@ class ResearcherController extends Controller
         return view('layouts.app', ['researchers' => $researchers]);
     }
 
-    public function api(Request $request, Researcher $researcher)
+    public function api(Researcher $researcher)
     {
         // Get all researchers, with a 25 entry pagination
         $researchers = $researcher->orderBy('id', 'asc')->paginate(25);
