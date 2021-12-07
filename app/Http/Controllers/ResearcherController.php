@@ -151,6 +151,32 @@ class ResearcherController extends Controller
 
     }
 
+    public function test(Request $request)
+    {
+        // Get the search value from the request
+        $name = $request->input('name');
+        $state = $request->input('state');
+        $university = $request->input('university');
+        $role = $request->input('role');
+        $research_field = $request->input('research_field');
+        $keywords = $request->input('keywords');
+
+        // Search in the title and body columns from the posts table
+        $researchers = Researcher::query()
+            ->where('name', 'LIKE', "%{$name}%")
+            ->where('state', 'LIKE', "%{$state}%")
+            ->where('university', 'LIKE', "%{$university}%")
+            ->where('role', 'LIKE', "%{$role}%")
+            ->where('research_field', 'LIKE', "%{$research_field}%")
+            ->where('keywords', 'LIKE', "%{$keywords}%")
+            // ->paginate(25);
+            ->get();
+
+        // Return the search view with the resluts compacted
+        return view('test', ['researchers' => $researchers]);
+
+    }
+
     public function filter(Request $request, Researcher $researcher)
     {
         // Search for a researcher based on its name
