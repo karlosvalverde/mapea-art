@@ -18,17 +18,18 @@ use App\Models\Researcher;
 //     return view("index");
 // });
 
-//  Route::get('/', function () {
+Route::get('/', function () {
 
-//     // $mapeamento = DB::table('mapeamento')->get();
+   $researchers = DB::table('mapeamento')->get();
 
-//     // return view('app', ['researchers' => $researchers]);
-//     return view('researchers.search', ["researchers" => $researchers]);
-//  });
+   // return view('app', ['researchers' => $researchers]);
+   return view('layouts.app', ["researchers" => $researchers]);
+});
 
 // Auth::routes();
 
-// Route::get('/', [App\Http\Controllers\ResearcherController::class, 'index'])->name('app');
+// Route::get('/', [App\Http\Controllers\ResearcherController::class])->name('index');
+Route::get('/search', [App\Http\Controllers\ResearcherController::class], 'test')->name('search');
 // Route::get('/api', [App\Http\Controllers\ResearcherController::class, 'api'])->name('api');
 // Route::get('/api/{id}', function($id) {
 //     return Researcher::findOrFail(
@@ -39,18 +40,8 @@ use App\Models\Researcher;
 
 Route::get("/search", [App\Http\Controllers\ResearcherController::class, 'search'])->name("search");
 
-// Gets Researcher by University
-// Route::get('/api/university/{university}/{page}', function($university, $page) {
-//     return Researcher::where('university', $university)::all();
-//     return Researcher::findOrFail('university', $university)->simplePaginate(
-//         10,
-//         ['name','state'],
-//         'page',
-//         $page
-//     );
-// });
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/test', [App\Http\Controllers\ResearcherController::class, 'test'])->name('test');
+Route::get('/test', [App\Http\Controllers\ResearcherController::class, 'test_2'])->name('test');
 Route::resource('researchers', 'App\Http\Controllers\ResearcherController');
 Route::get('researchers/{id}', [App\Http\Controllers\ResearcherController::class, 'index','show'])->name('show');
 Route::resource('tasks', 'App\Http\Controllers\TaskController');
