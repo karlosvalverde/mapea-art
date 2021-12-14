@@ -173,7 +173,7 @@ class ResearcherController extends Controller
             ->get();
 
         // Return the search view with the resluts compacted
-        return view('components.search', compact('researchers'));
+        return view('layouts.app', ['researchers' => $researchers]);
 
     }
 
@@ -245,8 +245,8 @@ class ResearcherController extends Controller
         $researcher = Researcher::findOrFail($id);
 
         // Show the view and pass the researcher to it
-        // return view('components.detail', [$researcher => "researcher"]);
-        return view('researchers.show', ["researcher" => $researcher]);
+        return view('components.detail', ["researcher" => $researcher]);
+        // return view('layouts.app', ["researcher" => $researcher]);
             // ->with('researcher', $researcher);
     }
 

@@ -12,7 +12,8 @@
             </div>
             @php($count++)
             @endforeach
-            <p>{{ $count }} pesquisadores encontrados.</p>
+            <hr class="text-secondary"/>
+            <h2 class="text-secondary pb-3">{{ $count }} pesquisadores encontrados.</h2>
         </div>
     {{-- Detail --}}
     {{-- <div class="col-6">

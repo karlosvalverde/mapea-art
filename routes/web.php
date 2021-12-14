@@ -29,7 +29,7 @@ Route::get('/', function () {
 // Auth::routes();
 
 // Route::get('/', [App\Http\Controllers\ResearcherController::class])->name('index');
-Route::get('/search', [App\Http\Controllers\ResearcherController::class], 'test')->name('search');
+// Route::get('/search/{researchers}', [App\Http\Controllers\ResearcherController::class], 'test')->name('search');
 // Route::get('/api', [App\Http\Controllers\ResearcherController::class, 'api'])->name('api');
 // Route::get('/api/{id}', function($id) {
 //     return Researcher::findOrFail(
@@ -38,7 +38,8 @@ Route::get('/search', [App\Http\Controllers\ResearcherController::class], 'test'
 //     );
 // });
 
-Route::get("/search", [App\Http\Controllers\ResearcherController::class, 'search'])->name("search");
+// Route::get("/search", [App\Http\Controllers\ResearcherController::class, 'search'])->name("search");
+Route::get("/search", [App\Http\Controllers\ResearcherController::class, 'test'])->name("search");
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/test', [App\Http\Controllers\ResearcherController::class, 'test_2'])->name('test');

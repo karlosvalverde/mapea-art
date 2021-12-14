@@ -1,3 +1,4 @@
+@php($isDetail = true)
 <div class="text-break">
     <p><span class="fw-bold">Nome:</span><br/>
         {{$researcher->name}}

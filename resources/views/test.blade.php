@@ -135,11 +135,13 @@
     <button type="submit">Pesquisar</button>
 </form>
 
-@if($researchers->isNotEmpty())
+<x-researchers :researchers="$researchers"/>
+
+{{-- @if($researchers->isNotEmpty()) --}}
 {{-- <div class="bg-secondary w-100 sticky-top d-flex justify-content-center align-self-center p-2">
     {{ $researchers->links("pagination::bootstrap-4") }}
 </div> --}}
-@php($count=0)
+{{-- @php($count=0)
 
 <hr/>
     @foreach ($researchers as $researcher)
@@ -159,4 +161,4 @@
     <div>
         <h2>No researchers found</h2>
     </div>
-@endif
+@endif --}}

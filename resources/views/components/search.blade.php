@@ -1,11 +1,4 @@
 <div class="row">
-    {{-- <div class="container bg-warning">
-        @if (Request::is("/"))
-            <h2>Es un Test!</h2>
-        @else
-            Hola Lola!
-        @endif
-    </div> --}}
     <form action="{{ route('search') }}" method="GET">
         {{-- @csrf --}}
         {{-- Search by Name --}}
@@ -20,7 +13,7 @@
 
         {{-- Filter by State --}}
         <select name="state" class="form-select bg-primary border border-secondary text-secondary mb-3 shadow" aria-label="Filter by State">
-            <option selected>Seleccione um estado...</option>
+            <option value="" selected>Seleccione um estado...</option>
             <option value="Acre (AC)">Acre (AC)</option>
             <option value="Alagoas (AL)">Alagoas (AL)</option>
             <option value="Amapá (AP)">Amapá (AP)</option>
@@ -52,7 +45,7 @@
 
         {{-- Filter by University --}}
         <select name="university" class="form-select bg-primary border border-secondary text-secondary mb-3 shadow" aria-label="Filter by University">
-            <option selected>Seleccione uma universidade...</option>
+            <option value="" selected>Seleccione uma universidade...</option>
             <option value="Centro Universitário Senanc">Centro Universitário Senanc</option>
             <option value="Colégio Pedro II">Colégio Pedro II</option>
             <option value="Escola de Artes Visuais do Parque Lage">Escola de Artes Visuais do Parque Lage</option>
@@ -139,7 +132,7 @@
 
         {{-- Filter by Role --}}
         <select name="role" class="form-select bg-primary border border-secondary text-secondary mb-3 shadow" aria-label="Filter by Role">
-            <option selected>Seleccione o vinculo institucional...</option>
+            <option value="" selected>Seleccione o vinculo institucional...</option>
             <option value="Mestrando(a)">Mestrando(a)</option>
             <option value="Doutorando(a)">Doutorando(a)</option>
             <option value="Pós-doutorando(a)">Pós-doutorando(a)</option>
@@ -149,7 +142,7 @@
 
         {{-- Filter by Research Field --}}
         <select name="research_field" class="form-select bg-primary border border-secondary text-secondary mb-3 shadow" aria-label="Filter by Research Field">
-            <option selected>Seleccione o campo de pesquisa...</option>
+            <option value="" selected>Seleccione o campo de pesquisa...</option>
             <option value="Artes Visuais">Artes Visuais</option>
             <option value="Artes Cênicas">Artes Cênicas</option>
             <option value="Música">Música</option>
