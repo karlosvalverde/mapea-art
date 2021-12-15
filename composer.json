@@ -13,7 +13,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/scout": "^9.3",
         "laravel/tinker": "^2.5",
-        "laravel/ui": "^3.3",
+        "laravel/ui": "^3.4",
         "mattkingshott/quest": "^2.0",
         "spatie/laravel-searchable": "^1.10"
     },

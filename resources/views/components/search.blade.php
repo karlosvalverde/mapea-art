@@ -1,6 +1,6 @@
 <div class="row">
     <form action="{{ route('search') }}" method="GET">
-        {{-- @csrf --}}
+        @csrf
         {{-- Search by Name --}}
         <div class="input-group my-3 shadow">
             <input type="text" name="name" class="form-control bg-primary border border-secondary text-secondary" placeholder="Insere o nome do pesquisador(a)...">
@@ -8,7 +8,7 @@
 
         {{-- Search by Keywords --}}
         <div class="input-group my-3 shadow">
-            <input type="text" name="research_keywords" class="form-control bg-primary border border-secondary text-secondary" placeholder="Insere uma palavra chave...">
+            <input type="text" name="keywords" class="form-control bg-primary border border-secondary text-secondary" placeholder="Insere uma palavra chave...">
         </div>
 
         {{-- Filter by State --}}

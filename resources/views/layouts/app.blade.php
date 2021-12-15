@@ -22,6 +22,8 @@
                 <div class="col col-6 mr-5">
                     <x-header/>
                     <x-search :researchers="$researchers"/>
+                    <!-- React root DOM -->
+                    <div id="example"></div>
                 </div>
                 <div class="col col-6 h-100 no-gutters">
                     <div class="container bg-dark shadow h-100 overflow-auto p-5">
