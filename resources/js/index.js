@@ -1,36 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
-import Main from "./router"
+// import Main from "./router"
 
 import App from "./components/App";
-import TaskEdit from "./components/TaskEdit";
 
-if (document.getElementById("root")) {
-    ReactDOM.render(
+ReactDOM.render(
+    <React.StrictMode>
         <BrowserRouter>
-            <div>
             <App/>
-            </div>
+        </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById("app")
+);
 
-            {/* <div> */}
-                {/* <Routes> */}
-                    {/* <Route exact path="/:id/edit" component={<TaskEdit/>}/> */}
-                    {/* <Route exact path="/" component={<App/>}/>
-                </Routes> */}
-            {/* </div> */}
-        </BrowserRouter>,
-        document.getElementById("root")
-    );
-}
-
-// class Index extends Component {
-//     render() {
-//         return (
-//             <BrowserRouter>
-//                 <Route component={{Main}}/>
-//             </BrowserRouter>
-//         );
-//     }
-// }
-// ReactDOM.render(<Index/>, document.getElementById("index"));
