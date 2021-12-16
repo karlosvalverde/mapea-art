@@ -2,6 +2,8 @@ import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Layout from "./Layout";
+import Dashboard from "./User/Dashboard";
+import Login from "./User/Login";
 
 export default function App() {
     return (
@@ -16,6 +18,8 @@ export default function App() {
                 routes for. */}
                 {/* <Route path="*" element={<NoMatch />} />  */}
             </Route>
+            <Route path="/login" element={<Login />} />
+            <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
     );
 }
