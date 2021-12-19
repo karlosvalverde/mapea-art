@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { searchByName } from "../../api/researchers";
+// import { searchByName } from "../../api/researchers";
 
 export default function Search() {
     // const [query, setQuery] = useState("");
