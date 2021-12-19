@@ -15,19 +15,60 @@ class ResearcherController extends Controller
         * @return Response
         */
     // public function index(Request $request, Researcher $researcher)
+    // public function index(Request $request, Researcher $researcher)
+    // {
+    //     // Get all researchers, with a 25 entry pagination
+    //     // $allResearchers = $task->whereIn('user_id', $request->user())->with('user');
+    //     $researchers = $researcher->orderBy('id', 'asc')->get();
+
+    //     // return json response
+    //     return response()->json([
+    //         'researchers' => $researchers,
+    //     ]);
+
+    //     // return view('layouts.app', ['researchers' => $researchers]);
+    // }
+
     public function index(Request $request, Researcher $researcher)
     {
-        // Get all researchers, with a 25 entry pagination
-        // $allResearchers = $task->whereIn('user_id', $request->user())->with('user');
         $researchers = $researcher->orderBy('id', 'asc')->get();
 
-        // return json response
-        // return response()->json([
-        //     'researchers' => $researchers,
-        // ]);
-
-        return view('layouts.app', ['researchers' => $researchers]);
+         // return json response
+         return response()->json([
+             'researchers' => $researchers,
+         ]);
     }
+
+    // public function index(Request $request)
+    // {
+    //     $validatedData = $request->validate([
+    //         "name" => ["required"],
+    //         "fetchCached" => ["boolean"]
+    //     ]);
+
+    //     $fetchCached = $validatedData["fetchCached"];
+    //     $name = $validatedData["name"];
+
+    //     if ($fetchCached) {
+    //         return $this->fetchFromCache($name);
+    //     } else {
+    //         return $this->fetchFromDB($name);
+    //     }
+    // }
+
+    // public function fetchFromDB($name)
+    // {
+    //     $start_time = now();
+    //     $researchers = Researcher::where("name", "LIKE", "%{$name}%")->get();
+    //     $finish_time = now();
+
+    //     return response()->json([
+    //         "data" => [
+    //             "researchers" => $researchers,
+    //             "duration_in_milliseconds" => $finish_time->diffInMilliseconds($start_time)
+    //         ],
+    //     ]);
+    // }
 
     public function api(Researcher $researcher)
     {

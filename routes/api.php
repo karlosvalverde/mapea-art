@@ -22,6 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
+Route::get('researchers', [App\Http\Controllers\ResearcherController::class, 'index']);
+
 Route::get('researcher/all', [App\Http\Controllers\ResearcherController::class, 'api']);
 Route::get('researcher/{id?}', function($id) {
     return Researcher::findOrFail(

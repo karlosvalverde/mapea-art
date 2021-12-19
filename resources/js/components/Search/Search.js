@@ -1,23 +1,53 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
+import { searchByName } from "../../api/researchers";
 
 export default function Search() {
+    // const [query, setQuery] = useState("");
+    // const [researchers, setResearchers] = useState([]);
+
+    // useEffect(() => {
+    //     if (query) {
+    //         setLoading(true);
+    //         setResearchers([]);
+
+    //         searchByName({ name: query, fetchCached })
+    //         .then(({ data }) => {
+    //             setLoading(false);
+    //             setResearchers(data.researchers);
+    //             setQueryTime(data.duration_in_milliseconds);
+    //         })
+    //         .catch((error) => {
+    //             handleError(error);
+    //             setLoading(false);
+    //         });
+    //     }
+    // }, [query]);
+
     return (
-        <div class="row pt-3">
-            <div class="col col-lg-9">
+        <div className="row pt-3">
+            <div className="col col-lg-9">
                 <form>
                     {/* Search by Name */}
-                    <div class="input-group my-3 shadow">
-                        <input type="text" name="name" class="form-control bg-primary border border-secondary text-secondary" placeholder="Insere o nome do pesquisador(a)..."/>
+                    <div className="input-group my-3 shadow">
+                        <input
+                            size="lg"
+                            type="search"
+                            name="query"
+                            // value={query}
+                            // onChange={ ({ target }) => setQuery(target.value) }
+                            className="form-control bg-primary border border-dark "
+                            placeholder="Insere o nome do pesquisador(a)..."
+                        />
                     </div>
 
                     {/* Search by Keywords */}
-                    <div class="input-group my-3 shadow">
-                        <input type="text" name="keywords" class="form-control bg-primary border border-secondary text-secondary" placeholder="Insere uma palavra chave..."/>
+                    <div className="input-group my-3 shadow">
+                        <input type="text" name="keywords" className="form-control bg-primary border border-dark " placeholder="Insere uma palavra chave..."/>
                     </div>
 
                     {/* Filter by State */}
-                    <select name="state" class="form-select bg-primary border border-secondary text-secondary mb-3 shadow" aria-label="Filter by State">
-                        <option value="" selected>Seleccione um estado...</option>
+                    <select name="state" className="form-select bg-primary border border-dark  mb-3 shadow" aria-label="Filter by State">
+                        <option value="" defaultValue>Seleccione um estado...</option>
                         <option value="Acre (AC)">Acre (AC)</option>
                         <option value="Alagoas (AL)">Alagoas (AL)</option>
                         <option value="Amapá (AP)">Amapá (AP)</option>
@@ -48,8 +78,8 @@ export default function Search() {
                     </select>
 
                     {/* Filter by University */}
-                    <select name="university" class="form-select bg-primary border border-secondary text-secondary mb-3 shadow" aria-label="Filter by University">
-                        <option value="" selected>Seleccione uma universidade...</option>
+                    <select name="university" className="form-select bg-primary border border-dark  mb-3 shadow" aria-label="Filter by University">
+                        <option value="" defaultValue>Seleccione uma universidade...</option>
                         <option value="Centro Universitário Senanc">Centro Universitário Senanc</option>
                         <option value="Colégio Pedro II">Colégio Pedro II</option>
                         <option value="Escola de Artes Visuais do Parque Lage">Escola de Artes Visuais do Parque Lage</option>
@@ -135,8 +165,8 @@ export default function Search() {
                     </select>
 
                     {/* Filter by Role */}
-                    <select name="role" class="form-select bg-primary border border-secondary text-secondary mb-3 shadow" aria-label="Filter by Role">
-                        <option value="" selected>Seleccione o vinculo institucional...</option>
+                    <select name="role" className="form-select bg-primary border border-dark  mb-3 shadow" aria-label="Filter by Role">
+                        <option value="" defaultValue>Seleccione o vinculo institucional...</option>
                         <option value="Mestrando(a)">Mestrando(a)</option>
                         <option value="Doutorando(a)">Doutorando(a)</option>
                         <option value="Pós-doutorando(a)">Pós-doutorando(a)</option>
@@ -145,15 +175,15 @@ export default function Search() {
                     </select>
 
                     {/* Filter by Research Field */}
-                    <select name="research_field" class="form-select bg-primary border border-secondary text-secondary mb-3 shadow" aria-label="Filter by Research Field">
-                        <option value="" selected>Seleccione o campo de pesquisa...</option>
+                    <select name="research_field" className="form-select bg-primary border border-dark  mb-3 shadow" aria-label="Filter by Research Field">
+                        <option value="" defaultValue>Seleccione o campo de pesquisa...</option>
                         <option value="Artes Visuais">Artes Visuais</option>
                         <option value="Artes Cênicas">Artes Cênicas</option>
                         <option value="Música">Música</option>
                         <option value="Arte-educação">Arte-educação</option>
                         <option value="Audiovisual">Audiovisual</option>
                     </select>
-                    <button type="submit" class="btn btn-secondary w-100">Pesquisar</button>
+                    <button type="submit" className="btn btn-lg btn-outline-dark border-3 w-100 syne-b">Pesquisar</button>
                 </form>
             </div>
 
