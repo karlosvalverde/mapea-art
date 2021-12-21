@@ -147,52 +147,52 @@ class ResearcherController extends Controller
         }
     }
 
-    public function search(Researcher $researcher)
-    // public function search(Request $request)
-    // public function search(Request $request, $search = "")
-    {
-        // $result = Researcher::when()
-        // where("state", "LIKE", "%" . $search . "%")->get();
-        // $name = Researcher::where("name", "LIKE", "%" . $search . "%")->get();
+    // public function search(Researcher $researcher)
+    // // public function search(Request $request)
+    // // public function search(Request $request, $search = "")
+    // {
+    //     // $result = Researcher::when()
+    //     // where("state", "LIKE", "%" . $search . "%")->get();
+    //     // $name = Researcher::where("name", "LIKE", "%" . $search . "%")->get();
 
-        // if (count($result)) {
-        //     return response()->json($result);
-        // } else {
-        //     return response()->json(["Result" => "No data - Not found"], 404);
-        // }
-        // // Get the search value from the request
-        // $search = $request->input('search');
+    //     // if (count($result)) {
+    //     //     return response()->json($result);
+    //     // } else {
+    //     //     return response()->json(["Result" => "No data - Not found"], 404);
+    //     // }
+    //     // // Get the search value from the request
+    //     // $search = $request->input('search');
 
-        // // Search in the name column
-        // $researchers = Researcher::query()
-        //     ->where('name', 'LIKE', "%{$search}%")
-        //     ->get();
+    //     // // Search in the name column
+    //     // $researchers = Researcher::query()
+    //     //     ->where('name', 'LIKE', "%{$search}%")
+    //     //     ->get();
 
-        // return view('layouts.app', compact('researchers'));
-        // if ($request->wantsJson()) {
-        //     // return response()-json(Researcher::search($search));
-        //     return response()-json(Researcher::whereFuzzy("name", $search)->first()->name);
-        // } else {
-        //     abort(403);
-        // }
+    //     // return view('layouts.app', compact('researchers'));
+    //     // if ($request->wantsJson()) {
+    //     //     // return response()-json(Researcher::search($search));
+    //     //     return response()-json(Researcher::whereFuzzy("name", $search)->first()->name);
+    //     // } else {
+    //     //     abort(403);
+    //     // }
 
-        // $searchResults = (new Search())
-        //     ->registerModel(Researcher::class, 'name')
-        //     ->perform($request->input('query'));
+    //     // $searchResults = (new Search())
+    //     //     ->registerModel(Researcher::class, 'name')
+    //     //     ->perform($request->input('query'));
 
-        $researchers = $researcher->get();
+    //     $researchers = $researcher->get();
 
-        // return json response
-        // return response()->json([
-        //     'researchers' => $researchers,
-        // ]);
+    //     // return json response
+    //     // return response()->json([
+    //     //     'researchers' => $researchers,
+    //     // ]);
 
-        return view('researchers.search', ['researchers' => $researchers]);
+    //     return view('researchers.search', ['researchers' => $researchers]);
 
 
-    }
+    // }
 
-    public function test(Request $request)
+    public function search(Request $request)
     {
         // Get the search value from the request
         $name = $request->input('name');
@@ -210,12 +210,13 @@ class ResearcherController extends Controller
             ->where('role', 'LIKE', "%{$role}%")
             ->where('research_field', 'LIKE', "%{$research_field}%")
             ->where('keywords', 'LIKE', "%{$keywords}%")
-            // ->paginate(25);
             ->get();
 
+        return response()->json([
+            'researchers' => $researchers,
+        ]);
         // Return the search view with the resluts compacted
-        return view('layouts.app', ['researchers' => $researchers]);
-
+        // return view('layouts.app', ['researchers' => $researchers]);
     }
 
     public function test_2(Request $request)

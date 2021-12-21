@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Layout from "./Layout";
 import List from "./Search/List";
+import Searched from "./Search/Searched";
 import Detail from "./Search/Detail";
 import Dashboard from "./User/Dashboard";
 import Login from "./User/Login";
@@ -12,6 +13,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<List />} />
+                <Route path="/:search" element={<Searched />} />
                 <Route path="/researcher/:id" element={<Detail />} />
                 {/* <Route path="dashboard" element={<Dashboard />} /> */}
 
