@@ -1,4 +1,6 @@
 import React, { useState, useEffect, Component } from "react";
+import { useNavigate } from "react-router-dom";
+
 // import { searchByName } from "../../api/researchers";
 
 export default class Search extends Component {
@@ -15,7 +17,10 @@ export default class Search extends Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.mySearch = this.mySearch.bind(this);
     }
+
+
 
     handleChange(event) {
         const target = event.target;
@@ -28,7 +33,9 @@ export default class Search extends Component {
     }
 
     handleSubmit(event) {
+        const navigate = useNavigate();
         event.preventDefault();
+        navigate.push('/search')
     }
 
 
@@ -52,19 +59,26 @@ export default class Search extends Component {
     //         });
     //     }
     // }, [query]);
+    mySearch(key) {
+        console.warn(key);
+    }
+
     render () {
         return (
             <div className="row pt-3">
                 <div className="col col-lg-9">
-                    <form>
+                    {/* <form onSubmit={this.handleSubmit}> */}
                         {/* Search by Name */}
                         <div className="input-group my-3 shadow">
                             <input
                                 size="lg"
                                 type="search"
                                 name="name"
-                                value={this.state.name}
-                                onChange={this.handleChange}
+                                // value={this.state.name}
+                                // onChange={this.handleChange}
+                                onChange={(e => {
+                                    mySearch(e.target.value)
+                                })}
                                 className="form-control bg-primary border border-dark "
                                 placeholder="Insere o nome do pesquisador(a)..."
                             />
@@ -221,7 +235,7 @@ export default class Search extends Component {
                             <option value="Audiovisual">Audiovisual</option>
                         </select>
                         <button type="submit" value="Submit" className="btn btn-lg btn-outline-dark border-3 w-100 syne-b">Pesquisar</button>
-                    </form>
+                    {/* </form> */}
                 </div>
                 {this.state.name}
 

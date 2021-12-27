@@ -5367,14 +5367,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ App)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layout */ "./resources/js/components/Layout.js");
 /* harmony import */ var _Search_List__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Search/List */ "./resources/js/components/Search/List.js");
 /* harmony import */ var _Search_Searched__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Search/Searched */ "./resources/js/components/Search/Searched.js");
 /* harmony import */ var _Search_Detail__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Search/Detail */ "./resources/js/components/Search/Detail.js");
 /* harmony import */ var _User_Dashboard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./User/Dashboard */ "./resources/js/components/User/Dashboard.js");
 /* harmony import */ var _User_Login__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./User/Login */ "./resources/js/components/User/Login.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Search_Test__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Search/Test */ "./resources/js/components/Search/Test.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -5386,26 +5388,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Routes, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Routes, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
       path: "/",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {}),
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {}),
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
         index: true,
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Search_List__WEBPACK_IMPORTED_MODULE_2__["default"], {})
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-        path: "/:search",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Search_Searched__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
-        path: "/researcher/:id",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_Search_Detail__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Search_List__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+        path: "search/:search",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Search_Searched__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+        path: "researcher/:id",
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Search_Detail__WEBPACK_IMPORTED_MODULE_4__["default"], {})
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
       path: "/login",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_User_Login__WEBPACK_IMPORTED_MODULE_6__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_User_Login__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
       path: "/dashboard",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_User_Dashboard__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_User_Dashboard__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
+      path: "/test",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Search_Test__WEBPACK_IMPORTED_MODULE_7__["default"], {})
     })]
   });
 }
@@ -5815,6 +5820,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Search)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -5839,6 +5845,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
 
  // import { searchByName } from "../../api/researchers";
 
@@ -5866,6 +5873,7 @@ var Search = /*#__PURE__*/function (_Component) {
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
     _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    _this.mySearch = _this.mySearch.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -5880,7 +5888,9 @@ var Search = /*#__PURE__*/function (_Component) {
   }, {
     key: "handleSubmit",
     value: function handleSubmit(event) {
+      var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useNavigate)();
       event.preventDefault();
+      navigate.push('/search');
     } // const [query, setQuery] = useState("");
     // const [researchers, setResearchers] = useState([]);
     // useEffect(() => {
@@ -5901,442 +5911,448 @@ var Search = /*#__PURE__*/function (_Component) {
     // }, [query]);
 
   }, {
+    key: "mySearch",
+    value: function mySearch(key) {
+      console.warn(key);
+    }
+  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "row pt-3",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
           className: "col col-lg-9",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-              className: "input-group my-3 shadow",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-                size: "lg",
-                type: "search",
-                name: "name",
-                value: this.state.name,
-                onChange: this.handleChange,
-                className: "form-control bg-primary border border-dark ",
-                placeholder: "Insere o nome do pesquisador(a)..."
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-              className: "input-group my-3 shadow",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-                type: "text",
-                name: "keywords",
-                value: this.state.keywords,
-                onChange: this.handleChange,
-                className: "form-control bg-primary border border-dark",
-                placeholder: "Insere uma palavra chave..."
-              })
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("select", {
-              name: "state",
-              value: this.state.state,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+            className: "input-group my-3 shadow",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+              size: "lg",
+              type: "search",
+              name: "name" // value={this.state.name}
+              // onChange={this.handleChange}
+              ,
+              onChange: function onChange(e) {
+                mySearch(e.target.value);
+              },
+              className: "form-control bg-primary border border-dark ",
+              placeholder: "Insere o nome do pesquisador(a)..."
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+            className: "input-group my-3 shadow",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
+              type: "text",
+              name: "keywords",
+              value: this.state.keywords,
               onChange: this.handleChange,
-              className: "form-select bg-primary border border-dark  mb-3 shadow",
-              "aria-label": "Filter by State",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "",
-                defaultValue: true,
-                children: "Seleccione um estado..."
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Acre (AC)",
-                children: "Acre (AC)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Alagoas (AL)",
-                children: "Alagoas (AL)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Amap\xE1 (AP)",
-                children: "Amap\xE1 (AP)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Amazonas (AM)",
-                children: "Amazonas (AM)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Bahia (BA)",
-                children: "Bahia (BA)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Cear\xE1 (CE)",
-                children: "Cear\xE1 (CE)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Distrito Federal (DF)",
-                children: "Distrito Federal (DF)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Esp\xEDrito Santo (ES)",
-                children: "Esp\xEDrito Santo (ES)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Goi\xE1s (GO)",
-                children: "Goi\xE1s (GO)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Maranh\xE3o (MA)",
-                children: "Maranh\xE3o (MA)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Mato Grosso (MT)",
-                children: "Mato Grosso (MT)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Mato Grosso do Sul (MS)",
-                children: "Mato Grosso do Sul (MS)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Minas Gerais (MG)",
-                children: "Minas Gerais (MG)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Par\xE1 (PA)",
-                children: "Par\xE1 (PA)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Para\xEDba (PB)",
-                children: "Para\xEDba (PB)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Paran\xE1 (PR)",
-                children: "Paran\xE1 (PR)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Pernambuco (PE)",
-                children: "Pernambuco (PE)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Piau\xED (PI)",
-                children: "Piau\xED (PI)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Rio de Janeiro (RJ)",
-                children: "Rio de Janeiro (RJ)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Rio Grande do Norte (RN)",
-                children: "Rio Grande do Norte (RN)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Rio Grande do Sul (RS)",
-                children: "Rio Grande do Sul (RS)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Rond\xF4nia (RO)",
-                children: "Rond\xF4nia (RO)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Roraima (RR)",
-                children: "Roraima (RR)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Santa Catarina (SC)",
-                children: "Santa Catarina (SC)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "S\xE3o Paulo (SP)",
-                children: "S\xE3o Paulo (SP)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Sergipe (SE)",
-                children: "Sergipe (SE)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Tocantins (TO)",
-                children: "Tocantins (TO)"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("select", {
-              name: "university",
-              value: this.state.university,
-              onChange: this.handleChange,
-              className: "form-select bg-primary border border-dark  mb-3 shadow",
-              "aria-label": "Filter by University",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "",
-                defaultValue: true,
-                children: "Seleccione uma universidade..."
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Centro Universit\xE1rio Senanc",
-                children: "Centro Universit\xE1rio Senanc"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Col\xE9gio Pedro II",
-                children: "Col\xE9gio Pedro II"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Escola de Artes Visuais do Parque Lage",
-                children: "Escola de Artes Visuais do Parque Lage"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Escola de M\xFAsica da Universidade Federal de Minas Gerais",
-                children: "Escola de M\xFAsica da Universidade Federal de Minas Gerais"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Faculdade de M\xFAsica do Esp\xEDrito Santo",
-                children: "Faculdade de M\xFAsica do Esp\xEDrito Santo"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Faculdade Integrada Brasil Amaz\xF4nia",
-                children: "Faculdade Integrada Brasil Amaz\xF4nia"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Instituto Federal de Bras\xEDlia",
-                children: "Instituto Federal de Bras\xEDlia"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Instituto Federal do Cear\xE1",
-                children: "Instituto Federal do Cear\xE1"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Instituto Federal de Educa\xE7\xE3o | Ci\xEAncia e Tecnologia do Cear\xE1",
-                children: "Instituto Federal de Educa\xE7\xE3o, Ci\xEAncia e Tecnologia do Cear\xE1"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Instituto Federal de Goi\xE1s",
-                children: "Instituto Federal de Goi\xE1s"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Instituto Federal do Paran\xE1",
-                children: "Instituto Federal do Paran\xE1"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Instituto Federal do Rio Grande do Norte",
-                children: "Instituto Federal do Rio Grande do Norte"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Instituto Federal de Santa Catarina",
-                children: "Instituto Federal de Santa Catarina"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Instituto Federal do Tocantins",
-                children: "Instituto Federal do Tocantins"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Magist\xE9rio Superior",
-                children: "Magist\xE9rio Superior"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Pontif\xEDcia Universidade Cat\xF3lica de S\xE3o Paulo",
-                children: "Pontif\xEDcia Universidade Cat\xF3lica de S\xE3o Paulo"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Pontif\xEDcia Universidade Cat\xF3lica do Rio Grande do Sul",
-                children: "Pontif\xEDcia Universidade Cat\xF3lica do Rio Grande do Sul"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Secretaria Estadual da Educa\xE7\xE3o da Bahia",
-                children: "Secretaria Estadual da Educa\xE7\xE3o da Bahia"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Anhembi Morumbi",
-                children: "Universidade Anhembi Morumbi"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade da Amaz\xF4nia",
-                children: "Universidade da Amaz\xF4nia"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade de Bras\xEDlia",
-                children: "Universidade de Bras\xEDlia"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade de Coimbra",
-                children: "Universidade de Coimbra"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade do Estado do Amazonas",
-                children: "Universidade do Estado do Amazonas"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade do Estado de Minas Gerais",
-                children: "Universidade do Estado de Minas Gerais"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade do Estado do Par\xE1",
-                children: "Universidade do Estado do Par\xE1"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade do Estado do Rio de Janeiro",
-                children: "Universidade do Estado do Rio de Janeiro"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade do Estado de Santa Catarina",
-                children: "Universidade do Estado de Santa Catarina"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade do Extremo Sul Catarinense",
-                children: "Universidade do Extremo Sul Catarinense"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade da Integra\xE7\xE3o Internacional da Lusofonia Afro-Brasileira",
-                children: "Universidade da Integra\xE7\xE3o Internacional da Lusofonia Afro-Brasileira"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade de Leiden",
-                children: "Universidade de Leiden"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade de Passo Fundo",
-                children: "Universidade de Passo Fundo"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade de S\xE3o Paulo",
-                children: "Universidade de S\xE3o Paulo"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual de Campinas",
-                children: "Universidade Estadual de Campinas"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual do Cear\xE1",
-                children: "Universidade Estadual do Cear\xE1"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual de Feira de Santana",
-                children: "Universidade Estadual de Feira de Santana"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual de Maring\xE1",
-                children: "Universidade Estadual de Maring\xE1"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual do Paran\xE1",
-                children: "Universidade Estadual do Paran\xE1"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual de Ponta Grossa",
-                children: "Universidade Estadual de Ponta Grossa"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual do Rio de Janeiro",
-                children: "Universidade Estadual do Rio de Janeiro"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual do Rio Grande do Sul",
-                children: "Universidade Estadual do Rio Grande do Sul"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual de Santa Catarina",
-                children: "Universidade Estadual de Santa Catarina"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual Paulista",
-                children: "Universidade Estadual Paulista"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Estadual Paulista J\xFAlio de Mesquita Filho",
-                children: "Universidade Estadual Paulista J\xFAlio de Mesquita Filho"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Alagoas",
-                children: "Universidade Federal de Alagoas"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal da Bahia",
-                children: "Universidade Federal da Bahia"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Cariri",
-                children: "Universidade Federal do Cariri"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Cear\xE1",
-                children: "Universidade Federal do Cear\xE1"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Esp\xEDrito Santo",
-                children: "Universidade Federal do Esp\xEDrito Santo"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Goi\xE1s",
-                children: "Universidade Federal de Goi\xE1s"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Juiz de Fora",
-                children: "Universidade Federal de Juiz de Fora"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Mato Grosso",
-                children: "Universidade Federal de Mato Grosso"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Mato Grosso do Sul",
-                children: "Universidade Federal de Mato Grosso do Sul"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Minas Gerais",
-                children: "Universidade Federal de Minas Gerais"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Ouro Preto",
-                children: "Universidade Federal de Ouro Preto"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Oeste da Bahia",
-                children: "Universidade Federal do Oeste da Bahia"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Pampa",
-                children: "Universidade Federal do Pampa"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Par\xE1",
-                children: "Universidade Federal do Par\xE1"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal da Paraiba",
-                children: "Universidade Federal da Paraiba"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Pelotas",
-                children: "Universidade Federal de Pelotas"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Pernambuco",
-                children: "Universidade Federal de Pernambuco"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Estado do Rio de Janeiro",
-                children: "Universidade Federal do Estado do Rio de Janeiro"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Rec\xF4ncavo da Bahia",
-                children: "Universidade Federal do Rec\xF4ncavo da Bahia"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Rio de Janeiro",
-                children: "Universidade Federal do Rio de Janeiro"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Rio Grande",
-                children: "Universidade Federal do Rio Grande"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Rio Grande do Norte",
-                children: "Universidade Federal do Rio Grande do Norte"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Rio Grande do Sul",
-                children: "Universidade Federal do Rio Grande do Sul"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Roraima",
-                children: "Universidade Federal de Roraima"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Santa Maria",
-                children: "Universidade Federal de Santa Maria"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de S\xE3o Carlos",
-                children: "Universidade Federal de S\xE3o Carlos"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de S\xE3o Jo\xE3o del Rei",
-                children: "Universidade Federal de S\xE3o Jo\xE3o del Rei"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de S\xE3o Paulo",
-                children: "Universidade Federal de S\xE3o Paulo"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Sergipe",
-                children: "Universidade Federal de Sergipe"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal do Tocantins",
-                children: "Universidade Federal do Tocantins"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Uberl\xE2ndia",
-                children: "Universidade Federal de Uberl\xE2ndia"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal dos Vales do Jequitinhonha e Mucuri",
-                children: "Universidade Federal dos Vales do Jequitinhonha e Mucuri"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal de Vi\xE7osa",
-                children: "Universidade Federal de Vi\xE7osa"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Federal Fluminense",
-                children: "Universidade Federal Fluminense"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Paulista",
-                children: "Universidade Paulista"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Regional do Cariri",
-                children: "Universidade Regional do Cariri"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Nova de Lisboa",
-                children: "Universidade Nova de Lisboa"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Universidade Tecnol\xF3gica Federal do Paran\xE1",
-                children: "Universidade Tecnol\xF3gica Federal do Paran\xE1"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "University of Oxford",
-                children: "University of Oxford"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("select", {
-              name: "role",
-              value: this.state.role,
-              onChange: this.handleChange,
-              className: "form-select bg-primary border border-dark  mb-3 shadow",
-              "aria-label": "Filter by Role",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "",
-                defaultValue: true,
-                children: "Seleccione o vinculo institucional..."
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Mestrando(a)",
-                children: "Mestrando(a)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Doutorando(a)",
-                children: "Doutorando(a)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "P\xF3s-doutorando(a)",
-                children: "P\xF3s-doutorando(a)"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Docente",
-                children: "Docente"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Pesquisador(a)",
-                children: "Pesquisador(a)"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("select", {
-              name: "research_field",
-              value: this.state.research_field,
-              onChange: this.handleChange,
-              className: "form-select bg-primary border border-dark  mb-3 shadow",
-              "aria-label": "Filter by Research Field",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "",
-                defaultValue: true,
-                children: "Seleccione o campo de pesquisa..."
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Artes Visuais",
-                children: "Artes Visuais"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Artes C\xEAnicas",
-                children: "Artes C\xEAnicas"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "M\xFAsica",
-                children: "M\xFAsica"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Arte-educa\xE7\xE3o",
-                children: "Arte-educa\xE7\xE3o"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                value: "Audiovisual",
-                children: "Audiovisual"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
-              type: "submit",
-              value: "Submit",
-              className: "btn btn-lg btn-outline-dark border-3 w-100 syne-b",
-              children: "Pesquisar"
+              className: "form-control bg-primary border border-dark",
+              placeholder: "Insere uma palavra chave..."
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("select", {
+            name: "state",
+            value: this.state.state,
+            onChange: this.handleChange,
+            className: "form-select bg-primary border border-dark  mb-3 shadow",
+            "aria-label": "Filter by State",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "",
+              defaultValue: true,
+              children: "Seleccione um estado..."
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Acre (AC)",
+              children: "Acre (AC)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Alagoas (AL)",
+              children: "Alagoas (AL)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Amap\xE1 (AP)",
+              children: "Amap\xE1 (AP)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Amazonas (AM)",
+              children: "Amazonas (AM)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Bahia (BA)",
+              children: "Bahia (BA)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Cear\xE1 (CE)",
+              children: "Cear\xE1 (CE)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Distrito Federal (DF)",
+              children: "Distrito Federal (DF)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Esp\xEDrito Santo (ES)",
+              children: "Esp\xEDrito Santo (ES)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Goi\xE1s (GO)",
+              children: "Goi\xE1s (GO)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Maranh\xE3o (MA)",
+              children: "Maranh\xE3o (MA)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Mato Grosso (MT)",
+              children: "Mato Grosso (MT)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Mato Grosso do Sul (MS)",
+              children: "Mato Grosso do Sul (MS)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Minas Gerais (MG)",
+              children: "Minas Gerais (MG)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Par\xE1 (PA)",
+              children: "Par\xE1 (PA)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Para\xEDba (PB)",
+              children: "Para\xEDba (PB)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Paran\xE1 (PR)",
+              children: "Paran\xE1 (PR)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Pernambuco (PE)",
+              children: "Pernambuco (PE)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Piau\xED (PI)",
+              children: "Piau\xED (PI)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Rio de Janeiro (RJ)",
+              children: "Rio de Janeiro (RJ)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Rio Grande do Norte (RN)",
+              children: "Rio Grande do Norte (RN)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Rio Grande do Sul (RS)",
+              children: "Rio Grande do Sul (RS)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Rond\xF4nia (RO)",
+              children: "Rond\xF4nia (RO)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Roraima (RR)",
+              children: "Roraima (RR)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Santa Catarina (SC)",
+              children: "Santa Catarina (SC)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "S\xE3o Paulo (SP)",
+              children: "S\xE3o Paulo (SP)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Sergipe (SE)",
+              children: "Sergipe (SE)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Tocantins (TO)",
+              children: "Tocantins (TO)"
             })]
-          })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("select", {
+            name: "university",
+            value: this.state.university,
+            onChange: this.handleChange,
+            className: "form-select bg-primary border border-dark  mb-3 shadow",
+            "aria-label": "Filter by University",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "",
+              defaultValue: true,
+              children: "Seleccione uma universidade..."
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Centro Universit\xE1rio Senanc",
+              children: "Centro Universit\xE1rio Senanc"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Col\xE9gio Pedro II",
+              children: "Col\xE9gio Pedro II"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Escola de Artes Visuais do Parque Lage",
+              children: "Escola de Artes Visuais do Parque Lage"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Escola de M\xFAsica da Universidade Federal de Minas Gerais",
+              children: "Escola de M\xFAsica da Universidade Federal de Minas Gerais"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Faculdade de M\xFAsica do Esp\xEDrito Santo",
+              children: "Faculdade de M\xFAsica do Esp\xEDrito Santo"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Faculdade Integrada Brasil Amaz\xF4nia",
+              children: "Faculdade Integrada Brasil Amaz\xF4nia"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Instituto Federal de Bras\xEDlia",
+              children: "Instituto Federal de Bras\xEDlia"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Instituto Federal do Cear\xE1",
+              children: "Instituto Federal do Cear\xE1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Instituto Federal de Educa\xE7\xE3o | Ci\xEAncia e Tecnologia do Cear\xE1",
+              children: "Instituto Federal de Educa\xE7\xE3o, Ci\xEAncia e Tecnologia do Cear\xE1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Instituto Federal de Goi\xE1s",
+              children: "Instituto Federal de Goi\xE1s"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Instituto Federal do Paran\xE1",
+              children: "Instituto Federal do Paran\xE1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Instituto Federal do Rio Grande do Norte",
+              children: "Instituto Federal do Rio Grande do Norte"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Instituto Federal de Santa Catarina",
+              children: "Instituto Federal de Santa Catarina"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Instituto Federal do Tocantins",
+              children: "Instituto Federal do Tocantins"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Magist\xE9rio Superior",
+              children: "Magist\xE9rio Superior"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Pontif\xEDcia Universidade Cat\xF3lica de S\xE3o Paulo",
+              children: "Pontif\xEDcia Universidade Cat\xF3lica de S\xE3o Paulo"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Pontif\xEDcia Universidade Cat\xF3lica do Rio Grande do Sul",
+              children: "Pontif\xEDcia Universidade Cat\xF3lica do Rio Grande do Sul"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Secretaria Estadual da Educa\xE7\xE3o da Bahia",
+              children: "Secretaria Estadual da Educa\xE7\xE3o da Bahia"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Anhembi Morumbi",
+              children: "Universidade Anhembi Morumbi"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade da Amaz\xF4nia",
+              children: "Universidade da Amaz\xF4nia"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade de Bras\xEDlia",
+              children: "Universidade de Bras\xEDlia"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade de Coimbra",
+              children: "Universidade de Coimbra"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade do Estado do Amazonas",
+              children: "Universidade do Estado do Amazonas"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade do Estado de Minas Gerais",
+              children: "Universidade do Estado de Minas Gerais"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade do Estado do Par\xE1",
+              children: "Universidade do Estado do Par\xE1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade do Estado do Rio de Janeiro",
+              children: "Universidade do Estado do Rio de Janeiro"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade do Estado de Santa Catarina",
+              children: "Universidade do Estado de Santa Catarina"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade do Extremo Sul Catarinense",
+              children: "Universidade do Extremo Sul Catarinense"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade da Integra\xE7\xE3o Internacional da Lusofonia Afro-Brasileira",
+              children: "Universidade da Integra\xE7\xE3o Internacional da Lusofonia Afro-Brasileira"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade de Leiden",
+              children: "Universidade de Leiden"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade de Passo Fundo",
+              children: "Universidade de Passo Fundo"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade de S\xE3o Paulo",
+              children: "Universidade de S\xE3o Paulo"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual de Campinas",
+              children: "Universidade Estadual de Campinas"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual do Cear\xE1",
+              children: "Universidade Estadual do Cear\xE1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual de Feira de Santana",
+              children: "Universidade Estadual de Feira de Santana"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual de Maring\xE1",
+              children: "Universidade Estadual de Maring\xE1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual do Paran\xE1",
+              children: "Universidade Estadual do Paran\xE1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual de Ponta Grossa",
+              children: "Universidade Estadual de Ponta Grossa"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual do Rio de Janeiro",
+              children: "Universidade Estadual do Rio de Janeiro"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual do Rio Grande do Sul",
+              children: "Universidade Estadual do Rio Grande do Sul"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual de Santa Catarina",
+              children: "Universidade Estadual de Santa Catarina"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual Paulista",
+              children: "Universidade Estadual Paulista"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Estadual Paulista J\xFAlio de Mesquita Filho",
+              children: "Universidade Estadual Paulista J\xFAlio de Mesquita Filho"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Alagoas",
+              children: "Universidade Federal de Alagoas"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal da Bahia",
+              children: "Universidade Federal da Bahia"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Cariri",
+              children: "Universidade Federal do Cariri"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Cear\xE1",
+              children: "Universidade Federal do Cear\xE1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Esp\xEDrito Santo",
+              children: "Universidade Federal do Esp\xEDrito Santo"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Goi\xE1s",
+              children: "Universidade Federal de Goi\xE1s"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Juiz de Fora",
+              children: "Universidade Federal de Juiz de Fora"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Mato Grosso",
+              children: "Universidade Federal de Mato Grosso"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Mato Grosso do Sul",
+              children: "Universidade Federal de Mato Grosso do Sul"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Minas Gerais",
+              children: "Universidade Federal de Minas Gerais"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Ouro Preto",
+              children: "Universidade Federal de Ouro Preto"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Oeste da Bahia",
+              children: "Universidade Federal do Oeste da Bahia"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Pampa",
+              children: "Universidade Federal do Pampa"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Par\xE1",
+              children: "Universidade Federal do Par\xE1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal da Paraiba",
+              children: "Universidade Federal da Paraiba"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Pelotas",
+              children: "Universidade Federal de Pelotas"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Pernambuco",
+              children: "Universidade Federal de Pernambuco"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Estado do Rio de Janeiro",
+              children: "Universidade Federal do Estado do Rio de Janeiro"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Rec\xF4ncavo da Bahia",
+              children: "Universidade Federal do Rec\xF4ncavo da Bahia"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Rio de Janeiro",
+              children: "Universidade Federal do Rio de Janeiro"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Rio Grande",
+              children: "Universidade Federal do Rio Grande"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Rio Grande do Norte",
+              children: "Universidade Federal do Rio Grande do Norte"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Rio Grande do Sul",
+              children: "Universidade Federal do Rio Grande do Sul"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Roraima",
+              children: "Universidade Federal de Roraima"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Santa Maria",
+              children: "Universidade Federal de Santa Maria"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de S\xE3o Carlos",
+              children: "Universidade Federal de S\xE3o Carlos"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de S\xE3o Jo\xE3o del Rei",
+              children: "Universidade Federal de S\xE3o Jo\xE3o del Rei"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de S\xE3o Paulo",
+              children: "Universidade Federal de S\xE3o Paulo"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Sergipe",
+              children: "Universidade Federal de Sergipe"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal do Tocantins",
+              children: "Universidade Federal do Tocantins"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Uberl\xE2ndia",
+              children: "Universidade Federal de Uberl\xE2ndia"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal dos Vales do Jequitinhonha e Mucuri",
+              children: "Universidade Federal dos Vales do Jequitinhonha e Mucuri"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal de Vi\xE7osa",
+              children: "Universidade Federal de Vi\xE7osa"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Federal Fluminense",
+              children: "Universidade Federal Fluminense"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Paulista",
+              children: "Universidade Paulista"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Regional do Cariri",
+              children: "Universidade Regional do Cariri"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Nova de Lisboa",
+              children: "Universidade Nova de Lisboa"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Universidade Tecnol\xF3gica Federal do Paran\xE1",
+              children: "Universidade Tecnol\xF3gica Federal do Paran\xE1"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "University of Oxford",
+              children: "University of Oxford"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("select", {
+            name: "role",
+            value: this.state.role,
+            onChange: this.handleChange,
+            className: "form-select bg-primary border border-dark  mb-3 shadow",
+            "aria-label": "Filter by Role",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "",
+              defaultValue: true,
+              children: "Seleccione o vinculo institucional..."
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Mestrando(a)",
+              children: "Mestrando(a)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Doutorando(a)",
+              children: "Doutorando(a)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "P\xF3s-doutorando(a)",
+              children: "P\xF3s-doutorando(a)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Docente",
+              children: "Docente"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Pesquisador(a)",
+              children: "Pesquisador(a)"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("select", {
+            name: "research_field",
+            value: this.state.research_field,
+            onChange: this.handleChange,
+            className: "form-select bg-primary border border-dark  mb-3 shadow",
+            "aria-label": "Filter by Research Field",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "",
+              defaultValue: true,
+              children: "Seleccione o campo de pesquisa..."
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Artes Visuais",
+              children: "Artes Visuais"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Artes C\xEAnicas",
+              children: "Artes C\xEAnicas"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "M\xFAsica",
+              children: "M\xFAsica"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Arte-educa\xE7\xE3o",
+              children: "Arte-educa\xE7\xE3o"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
+              value: "Audiovisual",
+              children: "Audiovisual"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+            type: "submit",
+            value: "Submit",
+            className: "btn btn-lg btn-outline-dark border-3 w-100 syne-b",
+            children: "Pesquisar"
+          })]
         }), this.state.name]
       });
     }
@@ -6443,6 +6459,903 @@ function Searched() {
     })]
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/components/Search/Test.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/Search/Test.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Test)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+function Test() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null),
+      _useState2 = _slicedToArray(_useState, 2),
+      error = _useState2[0],
+      setError = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      isLoaded = _useState4[0],
+      setIsLoaded = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState6 = _slicedToArray(_useState5, 2),
+      researchers = _useState6[0],
+      setResearchers = _useState6[1]; //     set search query to empty string
+
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState8 = _slicedToArray(_useState7, 2),
+      q = _useState8[0],
+      setQ = _useState8[1]; //     set search parameters
+  //     we only what to search countries by capital and name
+  //     this list can be longer if you want
+  //     you can search countries even by their population
+  // just add it to this array
+
+
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(["name"]),
+      _useState10 = _slicedToArray(_useState9, 1),
+      searchParam = _useState10[0]; //     add a default value to be used by our select element
+
+
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(["All"]),
+      _useState12 = _slicedToArray(_useState11, 2),
+      filterByRole = _useState12[0],
+      setFilterByRole = _useState12[1];
+
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(["All"]),
+      _useState14 = _slicedToArray(_useState13, 2),
+      filterByUniversity = _useState14[0],
+      setFilterByUniversity = _useState14[1];
+
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState16 = _slicedToArray(_useState15, 2),
+      name = _useState16[0],
+      setName = _useState16[1];
+
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState18 = _slicedToArray(_useState17, 2),
+      keywords = _useState18[0],
+      setKeywords = _useState18[1];
+
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState20 = _slicedToArray(_useState19, 2),
+      estado = _useState20[0],
+      setEstado = _useState20[1];
+
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState22 = _slicedToArray(_useState21, 2),
+      university = _useState22[0],
+      setUniversity = _useState22[1];
+
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState24 = _slicedToArray(_useState23, 2),
+      role = _useState24[0],
+      setRole = _useState24[1];
+
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState26 = _slicedToArray(_useState25, 2),
+      researchField = _useState26[0],
+      setResearchField = _useState26[1];
+
+  var handleFilter = function handleFilter(data, key, value) {
+    return data.filter(function (item) {
+      return item[key] == value;
+    });
+  };
+
+  var handleSearch = function handleSearch(data, key, value) {
+    return data.filter(function (item) {
+      return item[key].toString().toLowerCase().indexOf(value.toLowerCase()) > -1;
+    });
+  };
+
+  var renderData = function renderData(data) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "card-grid",
+      children: data.map(function (item) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("article", {
+          className: "card",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            className: "card-content",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("h2", {
+              className: "card-name",
+              children: [item.id, " - ", item.name]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              className: "card-list",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
+                children: ["University:", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  children: item.university
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
+                children: ["Keywords: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  children: item.keywords
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
+                children: ["Role: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  children: item.role
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {
+                children: ["Research Field: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+                  children: item.research_field
+                })]
+              })]
+            })]
+          })
+        }, item.id);
+      })
+    });
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
+    fetch("api/researcher/search/all").then(function (res) {
+      return res.json();
+    }).then(function (result) {
+      setIsLoaded(true);
+      setResearchers(result.researchers);
+    }, // Note: it's important to handle errors here
+    // instead of a catch() block so that we don't swallow
+    // exceptions from actual bugs in components.
+    function (error) {
+      setIsLoaded(true);
+      setError(error);
+    });
+  }, []);
+
+  var filteredData = _toConsumableArray(researchers);
+
+  if (name) {
+    filteredData = handleSearch(filteredData, "name", name);
+  }
+
+  if (keywords) {
+    filteredData = handleSearch(filteredData, "keywords", keywords);
+  }
+
+  if (estado) {
+    filteredData = handleFilter(filteredData, "state", estado);
+  }
+
+  if (university) {
+    filteredData = handleFilter(filteredData, "university", university);
+  }
+
+  if (role) {
+    filteredData = handleFilter(filteredData, "role", role);
+  }
+
+  if (researchField) {
+    filteredData = handleFilter(filteredData, "research_field", researchField);
+  } // function search(researchers) {
+  //     return researchers.filter((item) => {
+  //         if (item.role == filterByRole) {
+  //             return searchParam.some((newItem) => {
+  //                 return (
+  //                     item[newItem]
+  //                         .toString()
+  //                         .toLowerCase()
+  //                         .indexOf(q.toLowerCase()) > -1
+  //                 );
+  //             });
+  //         } else if (item.university == filterByUniversity) {
+  //             return searchParam.some((newItem) => {
+  //                 return (
+  //                     item[newItem]
+  //                         .toString()
+  //                         .toLowerCase()
+  //                         .indexOf(q.toLowerCase()) > -1
+  //                 );
+  //             });
+  //         } else if (filterByRole == "All" && filterByUniversity == "All") {
+  //             return searchParam.some((newItem) => {
+  //                          return (
+  //                              item[newItem]
+  //                                  .toString()
+  //                                  .toLowerCase()
+  //                                  .indexOf(name.toLowerCase()) > -1
+  //                          );
+  //                      });
+  //                  }
+  //     });
+  // }
+
+
+  if (error) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+      children: error.message
+    });
+  } else if (!isLoaded) {
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+      children: "loading..."
+    });
+  } else {
+    return (
+      /*#__PURE__*/
+
+      /* here we map over the element and display each item as a card  */
+      (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "wrapper",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "search-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("label", {
+            htmlFor: "search-form",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+              value: name,
+              onChange: function onChange(e) {
+                return setName(e.target.value);
+              },
+              type: "search",
+              name: "search-form",
+              id: "search-form",
+              className: "search-input",
+              placeholder: "Search for..." // value={q}
+
+              /*
+              // set the value of our useState q
+              //  anytime the user types in the search box
+              */
+              // onChange={(e) => setQ(e.target.value)}
+
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+              className: "sr-only",
+              children: "Search name here"
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "search-wrapper",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("label", {
+            htmlFor: "search-form",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+              value: keywords,
+              onChange: function onChange(e) {
+                return setKeywords(e.target.value);
+              },
+              className: "search-input",
+              placeholder: "Keywords for..."
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+              className: "sr-only",
+              children: "Search keywords here"
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("select", {
+          name: "state",
+          value: estado,
+          onChange: function onChange(e) {
+            return setEstado(e.target.value);
+          },
+          className: "form-select bg-primary border border-dark  mb-3 shadow",
+          "aria-label": "Filter by State",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "",
+            defaultValue: true,
+            children: "Seleccione um estado..."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Acre (AC)",
+            children: "Acre (AC)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Alagoas (AL)",
+            children: "Alagoas (AL)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Amap\xE1 (AP)",
+            children: "Amap\xE1 (AP)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Amazonas (AM)",
+            children: "Amazonas (AM)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Bahia (BA)",
+            children: "Bahia (BA)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Cear\xE1 (CE)",
+            children: "Cear\xE1 (CE)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Distrito Federal (DF)",
+            children: "Distrito Federal (DF)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Esp\xEDrito Santo (ES)",
+            children: "Esp\xEDrito Santo (ES)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Goi\xE1s (GO)",
+            children: "Goi\xE1s (GO)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Maranh\xE3o (MA)",
+            children: "Maranh\xE3o (MA)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Mato Grosso (MT)",
+            children: "Mato Grosso (MT)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Mato Grosso do Sul (MS)",
+            children: "Mato Grosso do Sul (MS)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Minas Gerais (MG)",
+            children: "Minas Gerais (MG)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Par\xE1 (PA)",
+            children: "Par\xE1 (PA)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Para\xEDba (PB)",
+            children: "Para\xEDba (PB)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Paran\xE1 (PR)",
+            children: "Paran\xE1 (PR)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Pernambuco (PE)",
+            children: "Pernambuco (PE)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Piau\xED (PI)",
+            children: "Piau\xED (PI)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Rio de Janeiro (RJ)",
+            children: "Rio de Janeiro (RJ)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Rio Grande do Norte (RN)",
+            children: "Rio Grande do Norte (RN)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Rio Grande do Sul (RS)",
+            children: "Rio Grande do Sul (RS)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Rond\xF4nia (RO)",
+            children: "Rond\xF4nia (RO)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Roraima (RR)",
+            children: "Roraima (RR)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Santa Catarina (SC)",
+            children: "Santa Catarina (SC)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "S\xE3o Paulo (SP)",
+            children: "S\xE3o Paulo (SP)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Sergipe (SE)",
+            children: "Sergipe (SE)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Tocantins (TO)",
+            children: "Tocantins (TO)"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("select", {
+          name: "university",
+          value: university,
+          onChange: function onChange(e) {
+            return setUniversity(e.target.value);
+          },
+          className: "form-select bg-primary border border-dark  mb-3 shadow",
+          "aria-label": "Filter by University",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "",
+            defaultValue: true,
+            children: "Seleccione uma universidade..."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Centro Universit\xE1rio Senanc",
+            children: "Centro Universit\xE1rio Senanc"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Col\xE9gio Pedro II",
+            children: "Col\xE9gio Pedro II"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Escola de Artes Visuais do Parque Lage",
+            children: "Escola de Artes Visuais do Parque Lage"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Escola de M\xFAsica da Universidade Federal de Minas Gerais",
+            children: "Escola de M\xFAsica da Universidade Federal de Minas Gerais"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Faculdade de M\xFAsica do Esp\xEDrito Santo",
+            children: "Faculdade de M\xFAsica do Esp\xEDrito Santo"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Faculdade Integrada Brasil Amaz\xF4nia",
+            children: "Faculdade Integrada Brasil Amaz\xF4nia"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Instituto Federal de Bras\xEDlia",
+            children: "Instituto Federal de Bras\xEDlia"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Instituto Federal do Cear\xE1",
+            children: "Instituto Federal do Cear\xE1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Instituto Federal de Educa\xE7\xE3o | Ci\xEAncia e Tecnologia do Cear\xE1",
+            children: "Instituto Federal de Educa\xE7\xE3o, Ci\xEAncia e Tecnologia do Cear\xE1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Instituto Federal de Goi\xE1s",
+            children: "Instituto Federal de Goi\xE1s"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Instituto Federal do Paran\xE1",
+            children: "Instituto Federal do Paran\xE1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Instituto Federal do Rio Grande do Norte",
+            children: "Instituto Federal do Rio Grande do Norte"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Instituto Federal de Santa Catarina",
+            children: "Instituto Federal de Santa Catarina"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Instituto Federal do Tocantins",
+            children: "Instituto Federal do Tocantins"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Magist\xE9rio Superior",
+            children: "Magist\xE9rio Superior"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Pontif\xEDcia Universidade Cat\xF3lica de S\xE3o Paulo",
+            children: "Pontif\xEDcia Universidade Cat\xF3lica de S\xE3o Paulo"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Pontif\xEDcia Universidade Cat\xF3lica do Rio Grande do Sul",
+            children: "Pontif\xEDcia Universidade Cat\xF3lica do Rio Grande do Sul"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Secretaria Estadual da Educa\xE7\xE3o da Bahia",
+            children: "Secretaria Estadual da Educa\xE7\xE3o da Bahia"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Anhembi Morumbi",
+            children: "Universidade Anhembi Morumbi"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade da Amaz\xF4nia",
+            children: "Universidade da Amaz\xF4nia"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade de Bras\xEDlia",
+            children: "Universidade de Bras\xEDlia"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade de Coimbra",
+            children: "Universidade de Coimbra"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade do Estado do Amazonas",
+            children: "Universidade do Estado do Amazonas"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade do Estado de Minas Gerais",
+            children: "Universidade do Estado de Minas Gerais"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade do Estado do Par\xE1",
+            children: "Universidade do Estado do Par\xE1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade do Estado do Rio de Janeiro",
+            children: "Universidade do Estado do Rio de Janeiro"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade do Estado de Santa Catarina",
+            children: "Universidade do Estado de Santa Catarina"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade do Extremo Sul Catarinense",
+            children: "Universidade do Extremo Sul Catarinense"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade da Integra\xE7\xE3o Internacional da Lusofonia Afro-Brasileira",
+            children: "Universidade da Integra\xE7\xE3o Internacional da Lusofonia Afro-Brasileira"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade de Leiden",
+            children: "Universidade de Leiden"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade de Passo Fundo",
+            children: "Universidade de Passo Fundo"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade de S\xE3o Paulo",
+            children: "Universidade de S\xE3o Paulo"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual de Campinas",
+            children: "Universidade Estadual de Campinas"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual do Cear\xE1",
+            children: "Universidade Estadual do Cear\xE1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual de Feira de Santana",
+            children: "Universidade Estadual de Feira de Santana"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual de Maring\xE1",
+            children: "Universidade Estadual de Maring\xE1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual do Paran\xE1",
+            children: "Universidade Estadual do Paran\xE1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual de Ponta Grossa",
+            children: "Universidade Estadual de Ponta Grossa"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual do Rio de Janeiro",
+            children: "Universidade Estadual do Rio de Janeiro"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual do Rio Grande do Sul",
+            children: "Universidade Estadual do Rio Grande do Sul"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual de Santa Catarina",
+            children: "Universidade Estadual de Santa Catarina"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual Paulista",
+            children: "Universidade Estadual Paulista"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Estadual Paulista J\xFAlio de Mesquita Filho",
+            children: "Universidade Estadual Paulista J\xFAlio de Mesquita Filho"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Alagoas",
+            children: "Universidade Federal de Alagoas"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal da Bahia",
+            children: "Universidade Federal da Bahia"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Cariri",
+            children: "Universidade Federal do Cariri"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Cear\xE1",
+            children: "Universidade Federal do Cear\xE1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Esp\xEDrito Santo",
+            children: "Universidade Federal do Esp\xEDrito Santo"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Goi\xE1s",
+            children: "Universidade Federal de Goi\xE1s"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Juiz de Fora",
+            children: "Universidade Federal de Juiz de Fora"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Mato Grosso",
+            children: "Universidade Federal de Mato Grosso"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Mato Grosso do Sul",
+            children: "Universidade Federal de Mato Grosso do Sul"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Minas Gerais",
+            children: "Universidade Federal de Minas Gerais"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Ouro Preto",
+            children: "Universidade Federal de Ouro Preto"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Oeste da Bahia",
+            children: "Universidade Federal do Oeste da Bahia"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Pampa",
+            children: "Universidade Federal do Pampa"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Par\xE1",
+            children: "Universidade Federal do Par\xE1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal da Paraiba",
+            children: "Universidade Federal da Paraiba"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Pelotas",
+            children: "Universidade Federal de Pelotas"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Pernambuco",
+            children: "Universidade Federal de Pernambuco"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Estado do Rio de Janeiro",
+            children: "Universidade Federal do Estado do Rio de Janeiro"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Rec\xF4ncavo da Bahia",
+            children: "Universidade Federal do Rec\xF4ncavo da Bahia"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Rio de Janeiro",
+            children: "Universidade Federal do Rio de Janeiro"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Rio Grande",
+            children: "Universidade Federal do Rio Grande"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Rio Grande do Norte",
+            children: "Universidade Federal do Rio Grande do Norte"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Rio Grande do Sul",
+            children: "Universidade Federal do Rio Grande do Sul"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Roraima",
+            children: "Universidade Federal de Roraima"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Santa Maria",
+            children: "Universidade Federal de Santa Maria"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de S\xE3o Carlos",
+            children: "Universidade Federal de S\xE3o Carlos"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de S\xE3o Jo\xE3o del Rei",
+            children: "Universidade Federal de S\xE3o Jo\xE3o del Rei"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de S\xE3o Paulo",
+            children: "Universidade Federal de S\xE3o Paulo"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Sergipe",
+            children: "Universidade Federal de Sergipe"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal do Tocantins",
+            children: "Universidade Federal do Tocantins"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Uberl\xE2ndia",
+            children: "Universidade Federal de Uberl\xE2ndia"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal dos Vales do Jequitinhonha e Mucuri",
+            children: "Universidade Federal dos Vales do Jequitinhonha e Mucuri"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal de Vi\xE7osa",
+            children: "Universidade Federal de Vi\xE7osa"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Federal Fluminense",
+            children: "Universidade Federal Fluminense"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Paulista",
+            children: "Universidade Paulista"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Regional do Cariri",
+            children: "Universidade Regional do Cariri"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Nova de Lisboa",
+            children: "Universidade Nova de Lisboa"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Universidade Tecnol\xF3gica Federal do Paran\xE1",
+            children: "Universidade Tecnol\xF3gica Federal do Paran\xE1"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "University of Oxford",
+            children: "University of Oxford"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("select", {
+          value: role,
+          onChange: function onChange(e) {
+            return setRole(e.target.value);
+          },
+          className: "form-select bg-primary border border-dark  mb-3 shadow",
+          "aria-label": "Filter by Role",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "",
+            defaultValue: true,
+            children: "Seleccione o vinculo institucional..."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Mestrando(a)",
+            children: "Mestrando(a)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Doutorando(a)",
+            children: "Doutorando(a)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "P\xF3s-doutorando(a)",
+            children: "P\xF3s-doutorando(a)"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Docente",
+            children: "Docente"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Pesquisador(a)",
+            children: "Pesquisador(a)"
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("select", {
+          name: "research_field",
+          value: researchField,
+          onChange: function onChange(e) {
+            return setResearchField(e.target.value);
+          },
+          className: "form-select bg-primary border border-dark  mb-3 shadow",
+          "aria-label": "Filter by Research Field",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "",
+            defaultValue: true,
+            children: "Seleccione o campo de pesquisa..."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Artes Visuais",
+            children: "Artes Visuais"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Artes C\xEAnicas",
+            children: "Artes C\xEAnicas"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "M\xFAsica",
+            children: "M\xFAsica"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Arte-educa\xE7\xE3o",
+            children: "Arte-educa\xE7\xE3o"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("option", {
+            value: "Audiovisual",
+            children: "Audiovisual"
+          })]
+        }), !!filteredData.length ? renderData(filteredData) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+          children: "nothing found mate!"
+        })]
+      })
+    );
+  }
+} // export default class Test extends Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             name: '',
+//             researchers: []
+//         };
+//         // this.state = {
+//         //     name: "",
+//         //     keywords: "",
+//         //     state: "",
+//         //     university: "",
+//         //     role: "",
+//         //     research_field: ""
+//         // };
+//         this.renderResearchers = this.renderResearchers.bind(this);
+//         // this.handleChange = this.handleChange.bind(this);
+//         // this.handleSubmit = this.handleSubmit.bind(this);
+//         // this.mySearch = this.mySearch.bind(this);
+//     }
+//     mySearch(){
+//     }
+//     getResearchers(data) {
+//         axios
+//             .get('/api/researcher/search/?' + data)
+//             .then(response => {
+//                 console.log(response.data.researchers);
+//                 this.setState({
+//                     researchers: [...response.data.researchers]
+//                 });
+//             })
+//             .catch(error => {
+//                 console.log(error.response)
+//             });
+//     }
+//     // render tasks
+//     renderResearchers() {
+//         return this.state.researchers.map(res => (
+//             <div key={res.id} className="media">
+//                 <div className="media-body">
+//                     <p>
+//                         {res.id} - {res.name}{' '}
+//                         {/* <span className="text-muted">
+//                             {' '}<br/>
+//                             by {task.user.name} |{' '}
+//                             {task.updated_at
+//                                 .split(' ')
+//                                 .slice(1)
+//                                 .join(' ')
+//                             }
+//                         </span> */}
+//                         {/* Edit Task */}
+//                         {/* <Link
+//                             className="btn btn-sm btn-outline-primary"
+//                             to={`/${task.id}/edit`}
+//                         >
+//                             Edit
+//                         </Link> */}
+//                         {/* Delete Task */}
+//                         {/* <button
+//                             onClick={() => this.handleDelete(task.id)}
+//                             className="btn btn-sm btn-outline-danger float-right"
+//                         >
+//                             Delete
+//                         </button> */}
+//                     </p>
+//                 </div>
+//             </div>
+//         ));
+//     }
+//     // lifecycle method
+//     componentDidMount() {
+//         this.getResearchers("");
+//     }
+//     render() {
+//         return (
+//             <div className="container p-5">
+//                 <div className="col-6">
+//                     <h1>TEST</h1>
+//                     <h2>Search:</h2>
+//                     <input
+//                         type="text"
+//                         onChange={ev => {
+//                             // fetch(`/api/researcher/search/?name=${ev.target.value}`)
+//                             // .then(res => res.json())
+//                             // .then(json => this.state.researchers)
+//                             this.getResearchers(`name=${ev.target.value}`);
+//                         }}
+//                         className="form-control"
+//                         placeholder="Search Test..."
+//                     />
+//                     <input
+//                         type="text"
+//                         onChange={ev => {
+//                             // fetch(`/api/researcher/search/?name=${ev.target.value}`)
+//                             // .then(res => res.json())
+//                             // .then(json => this.state.researchers)
+//                             this.getResearchers(`&keywords=${ev.target.value}`);
+//                         }}
+//                         className="form-control"
+//                         placeholder="Search Keywords..."
+//                     />
+//                     <hr/>
+//                     {this.renderResearchers()}
+//                     {/* <div className="border-bottom border-primary border-3 pb-3">
+//                         <h2>{data.length} pesquisadores encontrados.</h2>
+//                     </div>
+//                     <div className="mt-3">
+//                         {data.map((item) => (
+//                             <Link to={"researcher/" + item.id} key={item.id}>{item.name}<br/></Link>
+//                         ))}
+//                     </div> */}
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
+// import { useState, useEffect } from "react";
+// function Test() {
+//     const [data, setData] = useState([]);
+//     // const [loading, setLoading] = useState(false);
+//     async function search(key) {
+//         console.log("TEST :" + key);
+//         let result = await fetch("/api/researcher/search/?name=" + key);
+//         result = await result.json();
+//         setData(result);
+//         console.log("DATA :" + data);
+// if (key.length > 0) {
+//     useEffect(() => {
+//         setLoading(true);
+//         fetch("/api/researcher/search/?name=" + key)
+//             .then(res => res.json())
+//             .then(data => {
+//                 setData(data);
+//             })
+//             .catch((err) => {
+//                 setError(err);
+//             })
+//             .finally(() => {
+//                 setLoading(false);
+//             });
+//     }, []);
+// } else {
+//     useEffect(() => {
+//         setLoading(true);
+//         fetch("/api/researchers")
+//             .then(res => res.json())
+//             .then(data => {
+//                 setData(data.researchers);
+//             })
+//             .catch((err) => {
+//                 setError(err);
+//             })
+//             .finally(() => {
+//                 setLoading(false);
+//             });
+//     }, []);
+// }
+// }
+// if (loading) {
+//     return <h1 className="text-primary">Loading...</h1>
+// }
+//     return(
+//         <div className="container p-5">
+//             <div className="col-6">
+//                 <h1>TEST</h1>
+//                 <h2>Search:</h2>
+//                 <input
+//                     type="text"
+//                     onChange={(e) => {
+//                         search(e.target.value)
+//                     }}
+//                     className="form-control"
+//                     placeholder="Search Test..."
+//                 />
+//                 <hr/>
+//                 {
+//                     data.map((el)=>
+//                         <p>{el.name}</p>
+//                     )
+//                 }
+//             </div>
+//         </div>
+//     );
+// }
+// export default Test;
 
 /***/ }),
 
@@ -61593,6 +62506,18 @@ function _extends() {
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
 /******/ 		};
 /******/ 	})();
 /******/ 	
