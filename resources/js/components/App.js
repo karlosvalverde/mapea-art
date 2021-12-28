@@ -14,7 +14,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<List />} />
-                <Route path="search/:search" element={<Searched />} />
+                {/* <Route path="search/:search" element={<Searched />} /> */}
                 <Route path="researcher/:id" element={<Detail />} />
             </Route>
             <Route path="/login" element={<Login />} />

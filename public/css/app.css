@@ -11311,3 +11311,7 @@ textarea.form-control-lg {
   font-family: "Syne", sans-serif;
   font-weight: 800;
 }
+
+.btn-outline-primary:hover a {
+  color: #212529 !important;
+}
