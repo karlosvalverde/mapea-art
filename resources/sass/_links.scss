@@ -1,0 +1,25 @@
+a {
+    &:not(.is-btn) {
+        text-decoration: none !important;
+        border-bottom: solid 0;
+        transition: 75ms;
+
+        &:not(.is-header) {
+            &:hover {
+                text-decoration: none !important;
+                border-bottom: solid 1px !important;
+            }
+        }
+    }
+
+    &.is-header {
+        color: $dark !important;
+        text-decoration: none !important;
+        transition: 75ms;
+
+        &:hover {
+            color: $secondary !important;
+            text-decoration: none !important;
+        }
+    }
+}

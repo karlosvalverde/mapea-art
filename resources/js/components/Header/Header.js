@@ -6,7 +6,7 @@ export default function Header() {
         <div className="row">
             <div className="col col-lg-9 border-bottom border-dark border-3 pb-3">
                 <h1>
-                    <Link className="text-decoration-none link-dark syne-b" to="/">
+                    <Link className="is-header syne-b" to="/">
                         <span className="syne-xb">Mapeamento</span><br/>
                         de pesquisadores em arte no contexto <span className="syne-xb">brasilero</span>
                     </Link>

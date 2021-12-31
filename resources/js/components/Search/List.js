@@ -1,61 +1,104 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
+import { ResearchersContext } from "../../context";
 
-export default function List ({
-    error,
-    isLoaded,
-    setIsLoaded,
-    filteredData,
-    renderData
-}) {
+const List = props => {
 
+    const researchersContext = useContext(ResearchersContext);
 
-    // let param = useParams();
+    const {
+        researchers,
+        selectedResearcher,
+        setSelectedResearcher,
+        error,
+        isLoaded,
+        name,
+        keywords,
+        estado,
+        university,
+        role,
+        researchField
+     } = researchersContext;
 
-    // const [data, setData] = useState([]);
-    // const [loading, setLoading] = useState(false);
-    // const [error, setError] = useState();
+     let filteredData = [...researchers];
 
-    // if (param.length > 0) {
-    //     useEffect(() => {
-    //         setLoading(true);
-    //         fetch("/api/researcher/search/" + param)
-    //             .then(res => res.json())
-    //             .then(data => {
-    //                 setData(data);
-    //             })
-    //             .catch((err) => {
-    //                 setError(err);
-    //             })
-    //             .finally(() => {
-    //                 setLoading(false);
-    //             });
-    //     }, []);
-    // } else {
-    //     useEffect(() => {
-    //         setLoading(true);
-    //         fetch("/api/researchers")
-    //             .then(res => res.json())
-    //             .then(data => {
-    //                 setData(data.researchers);
-    //             })
-    //             .catch((err) => {
-    //                 setError(err);
-    //             })
-    //             .finally(() => {
-    //                 setLoading(false);
-    //             });
-    //     }, []);
-    // }
+     const handleFilter = (data, key, value) => {
+        return data.filter(item => item[key] == value);
+    };
 
+    const handleSearch = (data, key, value) => {
+        return data.filter(item => item[key].toString().toLowerCase().indexOf(value.toLowerCase()) > -1);
+    };
 
-    // if (loading) {
-    //     return <h1 className="text-primary">Loading...</h1>
-    // }
+    if (name) {
+        filteredData = handleSearch(filteredData, "name", name);
+    }
+    if (keywords) {
+        filteredData = handleSearch(filteredData, "keywords", keywords);
+    }
+    if (estado) {
+        filteredData = handleFilter(filteredData, "state", estado);
+    }
+    if (university) {
+        filteredData = handleFilter(filteredData, "university", university);
+    }
+    if (role) {
+        filteredData = handleFilter(filteredData, "role", role);
+    }
+    if (researchField) {
+        filteredData = handleFilter(filteredData, "research_field", researchField);
+    }
 
-    // if (error || !Array.isArray(data)) {
-    //     return <p className="text-primary">There was an error loading your data!</p>;
-    // }
+    const renderData = (data) => {
+        return (
+            <>
+            <div className={`${name.length > 0 || keywords.length > 0 || estado.length > 0 || university.length > 0 || role.length > 0 || researchField.length > 0 ? "border-bottom border-secondary text-secondary" : "" }`}>
+                <h5>
+                    {name.length > 0 ?
+                    <>
+                        <span className="bg-secondary text-dark p-2">nombre</span><div className="d-inline-block py-3 px-2"><u>{name}</u> / </div>
+                    </>
+                        : "" }
+                    {keywords.length > 0 ?
+                    <>
+                        <span className="bg-secondary text-dark p-2">palavra-chave</span><div className="d-inline-block py-3 px-2"><u>{keywords}</u> / </div>
+                    </>
+                        : "" }
+                    {estado.length > 0 ?
+                    <>
+                        <span className="bg-secondary text-dark p-2">estado</span><div className="d-inline-block py-3 px-2"><u>{estado}</u> / </div>
+                    </>
+                        : "" }
+                    {university.length > 0 ?
+                    <>
+                        <span className="bg-secondary text-dark p-2">universidade</span><div className="d-inline-block py-3 px-2"><u>{university}</u> / </div>
+                    </>
+                        : "" }
+                    {role.length > 0 ?
+                    <>
+                        <span className="bg-secondary text-dark p-2">role</span><div className="d-inline-block py-3 px-2"><u>{role}</u> / </div>
+                    </>
+                        : "" }
+                    {researchField.length > 0 ?
+                    <>
+                        <span className="bg-secondary text-dark p-2">campo</span><div className="d-inline-block py-3 px-2"><u>{researchField}</u> / </div>
+                    </>
+                        : "" }
+                </h5>
+            </div>
+            <div className="border-bottom border-secondary py-3 text-secondary">
+                <h4>{data.length} pesquisadores encontrados.</h4>
+            </div>
+            <div className="text-primary mt-3 row">
+                {data.map((item) => (
+                    <Link className="col is-btn m-2 btn btn-outline-primary" key={item.id} onClick={() => setSelectedResearcher(item)} to={"researcher/" + item.id}>
+                        {item.name}
+                    </Link>
+                ))}
+            </div>
+        </>
+        );
+    }
 
     if (error) {
         return (
@@ -63,7 +106,7 @@ export default function List ({
         );
     } else if (!isLoaded) {
         return (
-            <h2 className="text-primary">Carregando...</h2>
+            <h2 className="text-secondary">Carregando...</h2>
             );
     } else {
         return (
@@ -71,9 +114,11 @@ export default function List ({
             {!!filteredData.length ? (
                 renderData(filteredData)
             ) : (
-                <h4 className="text-primary">Nenhum resultado encontrado.</h4>
+                <h4 className="text-secondary">Nenhum resultado encontrado.</h4>
              )}
         </>
         );
     }
 }
+
+export default List;

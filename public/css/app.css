@@ -11312,6 +11312,36 @@ textarea.form-control-lg {
   font-weight: 800;
 }
 
-.btn-outline-primary:hover a {
+.is-btn:hover {
+  color: #ceffd6 !important;
+  transition: 75ms;
+  border: solid 1px #ceffd6 !important;
+  border-bottom: solid 4px #ceffd6 !important;
+  border-left: solid 4px #ceffd6 !important;
+  background-color: #212529 !important;
+}
+.is-btn:hover a {
+  color: #ceffd6 !important;
+}
+.is-btn:active, .is-btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(206, 255, 214, 0.5) !important;
+}
+
+a:not(.is-btn) {
+  text-decoration: none !important;
+  border-bottom: solid 0;
+  transition: 75ms;
+}
+a:not(.is-btn):not(.is-header):hover {
+  text-decoration: none !important;
+  border-bottom: solid 1px !important;
+}
+a.is-header {
   color: #212529 !important;
+  text-decoration: none !important;
+  transition: 75ms;
+}
+a.is-header:hover {
+  color: #ceffd6 !important;
+  text-decoration: none !important;
 }

@@ -1,117 +1,61 @@
-import React, { useState, useEffect } from "react";
-import { Outlet, Link } from "react-router-dom";
+import React, { useState, useEffect, useContext } from "react";
+import { Routes, Route, Link, Outlet, useRoutes } from "react-router-dom";
+import { ResearchersContext } from "../context";
 
 import Header from "./Header/Header";
+import Detail from "./Search/Detail";
 import List from "./Search/List";
 import Search from "./Search/Search";
 
-export default function Layout () {
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [researchers, setResearchers] = useState([]);
-    const [name, setName] = useState("");
-    const [keywords, setKeywords] = useState("");
-    const [estado, setEstado] = useState("");
-    const [university, setUniversity] = useState("");
-    const [role, setRole] = useState("");
-    const [researchField, setResearchField] = useState("");
+const Layout = props => {
 
-    const handleFilter = (data, key, value) => {
-        return data.filter(item => item[key] == value);
-    };
+    const researchersContext = useContext(ResearchersContext);
 
-    const handleSearch = (data, key, value) => {
-        return data.filter(item => item[key].toString().toLowerCase().indexOf(value.toLowerCase()) > -1);
-    };
+    const {
+        filteredData,
+        selectedResearcher,
+        setSelectedResearcher,
+        name,
+        setName,
+        keywords,
+        setKeywords,
+        estado,
+        setEstado,
+        university,
+        setUniversity,
+        role,
+        setRole,
+        researchField,
+        setResearchField
+     } = researchersContext;
 
-    const renderData = data => (
-        <>
-            <div className={`${name.length > 0 || keywords.length > 0 || estado.length > 0 || university.length > 0 || role.length > 0 || researchField.length > 0 ? "border-bottom border-primary pb-4 text-primary" : "" }`}>
-                <h5>
-                    {name.length > 0 ?
-                    <>
-                        <span className="bg-primary text-dark p-2">nombre</span>  <span className="p-2"><u>{name}</u> /  </span>
-                    </>
-                        : "" }
-                    {keywords.length > 0 ?
-                    <>
-                        <span className="bg-primary text-dark p-2">palavra-chave</span>  <span className="p-2"><u>{keywords}</u> /  </span>
-                    </>
-                        : "" }
-                    {estado.length > 0 ?
-                    <>
-                        <span className="bg-primary text-dark p-2">estado</span>  <span className="p-2"><u>{estado}</u> /  </span>
-                    </>
-                        : "" }
-                    {university.length > 0 ?
-                    <>
-                        <span className="bg-primary text-dark p-2">universidade</span>  <span className="p-2"><u>{university}</u> /  </span>
-                    </>
-                        : "" }
-                    {role.length > 0 ?
-                    <>
-                        <span className="bg-primary text-dark p-2">role</span>  <span className="p-2"><u>{role}</u> /  </span>
-                    </>
-                        : "" }
-                    {researchField.length > 0 ?
-                    <>
-                        <span className="bg-primary text-dark p-2">campo</span>  <span className="p-2"><u>{researchField}</u> /  </span>
-                    </>
-                        : "" }
-                </h5>
-            </div>
-            <div className="border-bottom border-primary py-3 text-primary">
-                <h4>{data.length} pesquisadores encontrados.</h4>
-            </div>
-            <div className="text-primary mt-3 row">
-                {data.map((item) => (
-                    <div className="col m-2 btn btn-outline-primary">
-                        <Link className="text-decoration-none" to={"researcher/" + item.id} key={item.id}>{item.name}</Link>
-                    </div>
-                ))}
-            </div>
-        </>
-     );
 
-     useEffect(() => {
-        fetch("api/researcher/search/all")
-            .then((res) => res.json())
-            .then(
-                (result) => {
-                    setIsLoaded(true);
-                    setResearchers(result.researchers);
-                },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
-                // exceptions from actual bugs in components.
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            );
-    }, []);
 
-    let filteredData = [...researchers];
-    if (name) {
-        filteredData = handleSearch(filteredData, "name", name);
-    }
-    if (keywords) {
-        filteredData = handleSearch(filteredData, "keywords", keywords);
-    }
-    if (estado) {
-        filteredData = handleFilter(filteredData, "state", estado);
-    }
-    if (university) {
-        filteredData = handleFilter(filteredData, "university", university);
-    }
-    if (role) {
-        filteredData = handleFilter(filteredData, "role", role);
-    }
-    if (researchField) {
-        filteredData = handleFilter(filteredData, "research_field", researchField);
-    }
+    // let filteredData = [...researchers];
+
+
+
+    // useEffect(() => {
+    //     fetch("api/researcher/search/all")
+    //         .then((res) => res.json())
+    //         .then(
+    //             (result) => {
+    //                 setIsLoaded(true);
+    //                 setResearchers(result.researchers);
+    //             },
+    //             // Note: it's important to handle errors here
+    //             // instead of a catch() block so that we don't swallow
+    //             // exceptions from actual bugs in components.
+    //             (error) => {
+    //                 setIsLoaded(true);
+    //                 setError(error);
+    //             }
+    //         );
+    // }, []);
+
 
     return (
+        <>
         <div className="container-fluid bg-primary bg-gradient vh-100 overflow-hidden">
             <div className="row h-100">
                 <div className="row p-5 h-100">
@@ -283,59 +227,21 @@ export default function Layout () {
                                     <option value="Arte-educação">Arte-educação</option>
                                     <option value="Audiovisual">Audiovisual</option>
                                 </select>
-                        {/* <button type="submit" value="Submit" className="btn btn-lg btn-outline-dark border-3 w-100 syne-b">Pesquisar</button> */}
-                    {/* </form> */}
                             </div>
                         </div>
                     </div>
                     <div className="col col-lg-6 h-100 no-gutters">
                         <div className="container mt-5 mt-lg-0 bg-dark shadow h-100 overflow-auto p-5">
-                            <List
-                                error = {error}
-                                isLoaded = {isLoaded}
-                                // setIsLoaded = {setIsLoaded}
-                                filteredData = {filteredData}
-                                renderData = {renderData}
-                            />
+                            <Outlet />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </>
+
     );
-
 }
-// export default class Layout extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-//             researchers: [],
-//             name: "",
-//             keywords: "",
-//             estado: "",
-//             university: "",
-//             role: "",
-//             researchField: "",
-//         }
-//     }
-//     render() {
-//         return (
-//             <div className="container-fluid bg-primary bg-gradient vh-100 overflow-hidden">
-//                 <div className="row h-100">
-//                     <div className="row p-5 h-100">
-//                         <div className="col col-lg-6 mr-5">
-//                             <Header/>
-//                             <Search/>
 
-//                         </div>
-//                         <div className="col col-lg-6 h-100 no-gutters">
-//                             <div className="container mt-5 mt-lg-0 bg-dark shadow h-100 overflow-auto p-5">
-//                                 <Outlet />
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         );
-//     }
-// }
+export default Layout;
+
