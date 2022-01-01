@@ -91,7 +91,7 @@ const List = props => {
             </div>
             <div className="text-primary mt-3 row">
                 {data.map((item) => (
-                    <Link className="col is-btn m-2 btn btn-outline-primary" key={item.id} onClick={() => setSelectedResearcher(item)} to={"researcher/" + item.id}>
+                    <Link className="col is-btn m-2 btn btn-outline-primary d-flex align-items-center" key={item.id} onClick={() => setSelectedResearcher(item)} to={"researcher/" + item.id}>
                         {item.name}
                     </Link>
                 ))}

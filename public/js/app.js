@@ -5368,16 +5368,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../context */ "./resources/js/context/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Layout */ "./resources/js/components/Layout.js");
 /* harmony import */ var _Search_List__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Search/List */ "./resources/js/components/Search/List.js");
-/* harmony import */ var _Search_Searched__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Search/Searched */ "./resources/js/components/Search/Searched.js");
-/* harmony import */ var _Search_Detail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Search/Detail */ "./resources/js/components/Search/Detail.js");
-/* harmony import */ var _User_Dashboard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./User/Dashboard */ "./resources/js/components/User/Dashboard.js");
-/* harmony import */ var _User_Login__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./User/Login */ "./resources/js/components/User/Login.js");
-/* harmony import */ var _Search_Test__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Search/Test */ "./resources/js/components/Search/Test.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var _Search_Detail__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Search/Detail */ "./resources/js/components/Search/Detail.js");
+/* harmony import */ var _User_Dashboard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./User/Dashboard */ "./resources/js/components/User/Dashboard.js");
+/* harmony import */ var _User_Login__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./User/Login */ "./resources/js/components/User/Login.js");
+/* harmony import */ var _Search_Test__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Search/Test */ "./resources/js/components/Search/Test.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -5390,35 +5388,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  // const [researchers, setResearchers] = useState([]);
-  // const [name, setName] = useState("");
-  // const [keywords, setKeywords] = useState("");
-  // const [estado, setEstado] = useState("");
-  // const [university, setUniversity] = useState("");
-  // const [role, setRole] = useState("");
-  // const [researchField, setResearchField] = useState("");
-  // let filteredData = [...researchers];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_context__WEBPACK_IMPORTED_MODULE_1__.ResearchersContextProvider, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Routes, {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_context__WEBPACK_IMPORTED_MODULE_1__.ResearchersContextProvider, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Routes, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
         path: "/",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {}),
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {}),
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
           index: true,
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Search_List__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Search_List__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
           path: "researcher/:id",
-          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Search_Detail__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+          element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Search_Detail__WEBPACK_IMPORTED_MODULE_4__["default"], {})
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
         path: "/login",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_User_Login__WEBPACK_IMPORTED_MODULE_7__["default"], {})
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_User_Login__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
         path: "/dashboard",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_User_Dashboard__WEBPACK_IMPORTED_MODULE_6__["default"], {})
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_User_Dashboard__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Route, {
         path: "/test",
-        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_Search_Test__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+        element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Search_Test__WEBPACK_IMPORTED_MODULE_7__["default"], {})
       })]
     })
   });
@@ -5549,10 +5539,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Layout = function Layout(props) {
   var researchersContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_context__WEBPACK_IMPORTED_MODULE_1__.ResearchersContext);
-  var filteredData = researchersContext.filteredData,
-      selectedResearcher = researchersContext.selectedResearcher,
-      setSelectedResearcher = researchersContext.setSelectedResearcher,
-      name = researchersContext.name,
+  var name = researchersContext.name,
       setName = researchersContext.setName,
       keywords = researchersContext.keywords,
       setKeywords = researchersContext.setKeywords,
@@ -5563,25 +5550,7 @@ var Layout = function Layout(props) {
       role = researchersContext.role,
       setRole = researchersContext.setRole,
       researchField = researchersContext.researchField,
-      setResearchField = researchersContext.setResearchField; // let filteredData = [...researchers];
-  // useEffect(() => {
-  //     fetch("api/researcher/search/all")
-  //         .then((res) => res.json())
-  //         .then(
-  //             (result) => {
-  //                 setIsLoaded(true);
-  //                 setResearchers(result.researchers);
-  //             },
-  //             // Note: it's important to handle errors here
-  //             // instead of a catch() block so that we don't swallow
-  //             // exceptions from actual bugs in components.
-  //             (error) => {
-  //                 setIsLoaded(true);
-  //                 setError(error);
-  //             }
-  //         );
-  // }, []);
-
+      setResearchField = researchersContext.setResearchField;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
       className: "container-fluid bg-primary bg-gradient vh-100 overflow-hidden",
@@ -6078,8 +6047,8 @@ function Detail() {
   if (!isLoaded) {
     console.log(selectedResearcher);
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
-      className: "text-primary",
-      children: "Loading..."
+      className: "text-secondary",
+      children: "Carregando..."
     });
   }
 
@@ -6089,11 +6058,14 @@ function Detail() {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
         className: "link-secondary",
         to: "/",
+        onClick: function onClick() {
+          window.location.href = "/";
+        },
         children: "\u2190 Voltar"
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "text-secondary text-break",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "bg-secondary p-1 px-2 text-dark mb-3",
           children: "nome"
@@ -6101,7 +6073,7 @@ function Detail() {
           className: "py-2",
           children: selectedResearcher.name
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "bg-secondary p-1 px-2 text-dark mb-3",
           children: "estado"
@@ -6109,7 +6081,7 @@ function Detail() {
           className: "py-2",
           children: selectedResearcher.state
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "bg-secondary p-1 px-2 text-dark mb-3",
           children: "contacto"
@@ -6117,7 +6089,7 @@ function Detail() {
           className: "py-2",
           children: selectedResearcher.contact
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "bg-secondary p-1 px-2 text-dark mb-3",
           children: "web"
@@ -6130,7 +6102,7 @@ function Detail() {
             children: selectedResearcher.web
           })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "bg-secondary p-1 px-2 text-dark mb-3",
           children: "universidade"
@@ -6138,7 +6110,7 @@ function Detail() {
           className: "py-2",
           children: selectedResearcher.university
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "bg-secondary p-1 px-2 text-dark mb-3",
           children: "rol"
@@ -6146,7 +6118,7 @@ function Detail() {
           className: "py-2",
           children: selectedResearcher.role
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "bg-secondary p-1 px-2 text-dark mb-3",
           children: "campo"
@@ -6154,7 +6126,7 @@ function Detail() {
           className: "py-2",
           children: selectedResearcher.research_field
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
           className: "bg-secondary p-1 px-2 text-dark mb-3",
           children: "palavras-chave"
@@ -6331,7 +6303,7 @@ var List = function List(props) {
         className: "text-primary mt-3 row",
         children: data.map(function (item) {
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-            className: "col is-btn m-2 btn btn-outline-primary",
+            className: "col is-btn m-2 btn btn-outline-primary d-flex align-items-center",
             onClick: function onClick() {
               return setSelectedResearcher(item);
             },
@@ -6920,103 +6892,6 @@ var Search = /*#__PURE__*/function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 
-
-/***/ }),
-
-/***/ "./resources/js/components/Search/Searched.js":
-/*!****************************************************!*\
-  !*** ./resources/js/components/Search/Searched.js ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Searched)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-function Searched() {
-  var param = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useParams)();
-
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
-      _useState2 = _slicedToArray(_useState, 2),
-      data = _useState2[0],
-      setData = _useState2[1];
-
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-      _useState4 = _slicedToArray(_useState3, 2),
-      loading = _useState4[0],
-      setLoading = _useState4[1];
-
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
-      _useState6 = _slicedToArray(_useState5, 2),
-      error = _useState6[0],
-      setError = _useState6[1];
-
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    setLoading(true);
-    fetch("/api/researcher/search/" + param).then(function (res) {
-      return res.json();
-    }).then(function (data) {
-      setData(data);
-    })["catch"](function (err) {
-      console.log(err);
-    })["finally"](function () {
-      setLoading(false);
-    });
-  }, []);
-
-  if (loading) {
-    console.log(data); // console.log("TEST: " + props.match.params.id);
-
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
-      className: "text-primary",
-      children: "Loading..."
-    });
-  } // if (error || !Array.isArray(data)) {
-  //     console.log(data);
-  //     // console.log("TEST: " + props.match.params.id);
-  //     return <p className="text-primary">There was an error loading your data!</p>;
-  // }
-
-
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "border-bottom border-primary border-3 pb-3 text-primary",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("h2", {
-        children: [data.length, " pesquisadores encontrados."]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "text-primary mt-3",
-      children: data.map(function (item) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-          to: "researcher/" + item.id,
-          children: [item.name, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {})]
-        }, item.id);
-      })
-    })]
-  });
-}
 
 /***/ }),
 
@@ -7954,13 +7829,126 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Login)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
 
 
 function Login() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
-      children: "Login Component!"
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+      _useState2 = _slicedToArray(_useState, 2),
+      msg = _useState2[0],
+      setMsg = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+      _useState4 = _slicedToArray(_useState3, 2),
+      username = _useState4[0],
+      setUsername = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+      _useState6 = _slicedToArray(_useState5, 2),
+      pass = _useState6[0],
+      setPass = _useState6[1];
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+    name: "",
+    password: ""
+  }),
+      _useState8 = _slicedToArray(_useState7, 2),
+      user = _useState8[0],
+      setUser = _useState8[1]; // let navigate = useNavigate();
+
+
+  var name = user.name,
+      password = user.password;
+
+  var onInputChange = function onInputChange(e) {
+    setUser(_objectSpread(_objectSpread({}, user), {}, _defineProperty({}, e.target.name, e.target.value)));
+  };
+
+  var signIn = function signIn() {
+    var users = {
+      username: username
+    }; // To Store Email in Localstore and send to Home Page
+
+    if (user.name === "") {
+      alert("Insere um Nome válido...");
+    } else if (user.password === "") {
+      alert("Insere uma Senha válida...");
+    }
+
+    ;
+    axios__WEBPACK_IMPORTED_MODULE_1___default().post("http://localhost:8000/api/reactlogin/", user).then(function (response) {
+      setMsg(response.data);
+      localStorage.setItem("users", response.data);
+      history.push("/dashboard");
+    });
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    className: "container-fluid bg-primary bg-gradient vh-100 overflow-hidden",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "row h-100",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "row p-5 h-100",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "container col-4 text-center align-self-center",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "input-group my-3 shadow",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                size: "lg",
+                type: "search",
+                name: "name",
+                value: name,
+                onChange: function onChange(e) {
+                  return onInputChange(e);
+                },
+                className: "form-control bg-primary border border-dark ",
+                placeholder: "Insere o Nome..."
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "input-group my-3 shadow",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+                size: "lg",
+                type: "password",
+                name: "password",
+                value: password,
+                onChange: function onChange(e) {
+                  return onInputChange(e);
+                },
+                className: "form-control bg-primary border border-dark ",
+                placeholder: "Insere o Password..."
+              })
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              className: "is-login btn btn-outline-dark w-100",
+              onClick: signIn,
+              children: "Login"
+            })]
+          })
+        })
+      })
     })
   });
 }
@@ -8006,55 +7994,55 @@ var Provider = function Provider(props) {
       initialSelectedResearcher = props.selectedResearcher,
       children = props.children; // Use State to keep the values
 
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(initialResearchers),
+  var _useLocalStorage = useLocalStorage("researchers", initialResearchers),
+      _useLocalStorage2 = _slicedToArray(_useLocalStorage, 2),
+      researchers = _useLocalStorage2[0],
+      setResearchers = _useLocalStorage2[1];
+
+  var _useLocalStorage3 = useLocalStorage("selectedResearcher", initialSelectedResearcher),
+      _useLocalStorage4 = _slicedToArray(_useLocalStorage3, 2),
+      selectedResearcher = _useLocalStorage4[0],
+      setSelectedResearcher = _useLocalStorage4[1];
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
       _useState2 = _slicedToArray(_useState, 2),
-      researchers = _useState2[0],
-      setResearchers = _useState2[1];
+      error = _useState2[0],
+      setError = _useState2[1];
 
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(initialSelectedResearcher),
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState4 = _slicedToArray(_useState3, 2),
-      selectedResearcher = _useState4[0],
-      setSelectedResearcher = _useState4[1];
+      isLoaded = _useState4[0],
+      setIsLoaded = _useState4[1];
 
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
-      _useState6 = _slicedToArray(_useState5, 2),
-      error = _useState6[0],
-      setError = _useState6[1];
+  var _useLocalStorage5 = useLocalStorage("name", ""),
+      _useLocalStorage6 = _slicedToArray(_useLocalStorage5, 2),
+      name = _useLocalStorage6[0],
+      setName = _useLocalStorage6[1];
 
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-      _useState8 = _slicedToArray(_useState7, 2),
-      isLoaded = _useState8[0],
-      setIsLoaded = _useState8[1];
+  var _useLocalStorage7 = useLocalStorage("keywords", ""),
+      _useLocalStorage8 = _slicedToArray(_useLocalStorage7, 2),
+      keywords = _useLocalStorage8[0],
+      setKeywords = _useLocalStorage8[1];
 
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
-      _useState10 = _slicedToArray(_useState9, 2),
-      name = _useState10[0],
-      setName = _useState10[1];
+  var _useLocalStorage9 = useLocalStorage("estado", ""),
+      _useLocalStorage10 = _slicedToArray(_useLocalStorage9, 2),
+      estado = _useLocalStorage10[0],
+      setEstado = _useLocalStorage10[1];
 
-  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
-      _useState12 = _slicedToArray(_useState11, 2),
-      keywords = _useState12[0],
-      setKeywords = _useState12[1];
+  var _useLocalStorage11 = useLocalStorage("university", ""),
+      _useLocalStorage12 = _slicedToArray(_useLocalStorage11, 2),
+      university = _useLocalStorage12[0],
+      setUniversity = _useLocalStorage12[1];
 
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
-      _useState14 = _slicedToArray(_useState13, 2),
-      estado = _useState14[0],
-      setEstado = _useState14[1];
+  var _useLocalStorage13 = useLocalStorage("role", ""),
+      _useLocalStorage14 = _slicedToArray(_useLocalStorage13, 2),
+      role = _useLocalStorage14[0],
+      setRole = _useLocalStorage14[1];
 
-  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
-      _useState16 = _slicedToArray(_useState15, 2),
-      university = _useState16[0],
-      setUniversity = _useState16[1];
-
-  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
-      _useState18 = _slicedToArray(_useState17, 2),
-      role = _useState18[0],
-      setRole = _useState18[1];
-
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
-      _useState20 = _slicedToArray(_useState19, 2),
-      researchField = _useState20[0],
-      setResearchField = _useState20[1]; // Make the context object:
+  var _useLocalStorage15 = useLocalStorage("researchField", ""),
+      _useLocalStorage16 = _slicedToArray(_useLocalStorage15, 2),
+      researchField = _useLocalStorage16[0],
+      setResearchField = _useLocalStorage16[1]; // Make the context object:
 
 
   var researchersContext = {
@@ -8096,7 +8084,47 @@ var Provider = function Provider(props) {
     value: researchersContext,
     children: children
   });
-};
+}; // Hook
+
+function useLocalStorage(key, initialValue) {
+  // State to store our value
+  // Pass initial state function to useState so logic is only executed once
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(function () {
+    try {
+      // Get from local storage by key
+      var item = window.localStorage.getItem(key); // Parse stored json or if none return initialValue
+
+      // Parse stored json or if none return initialValue
+      return item ? JSON.parse(item) : initialValue;
+    } catch (error) {
+      // If error also return initialValue
+      console.log(error);
+      return initialValue;
+    }
+  }),
+      _useState6 = _slicedToArray(_useState5, 2),
+      storedValue = _useState6[0],
+      setStoredValue = _useState6[1]; // Return a wrapped version of useState's setter function that ...
+  // ... persists the new value to localStorage.
+
+
+  var setValue = function setValue(value) {
+    try {
+      // Allow value to be a function so we have same API as useState
+      var valueToStore = value instanceof Function ? value(storedValue) : value; // Save state
+
+      setStoredValue(valueToStore); // Save to local storage
+
+      window.localStorage.setItem(key, JSON.stringify(valueToStore));
+    } catch (error) {
+      // A more advanced implementation would handle the error case
+      console.log(error);
+    }
+  };
+
+  return [storedValue, setValue];
+}
+
 var Consumer = Context.Consumer;
 
 Provider.propTypes = {
@@ -8143,7 +8171,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
- // import Main from "./router"
+ // import * as serviceWorker from
 
 
 

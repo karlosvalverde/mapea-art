@@ -11327,6 +11327,10 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(206, 255, 214, 0.5) !important;
 }
 
+.is-login:hover {
+  color: #a5a6f6 !important;
+}
+
 a:not(.is-btn) {
   text-decoration: none !important;
   border-bottom: solid 0;

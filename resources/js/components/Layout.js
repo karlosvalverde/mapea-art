@@ -12,9 +12,6 @@ const Layout = props => {
     const researchersContext = useContext(ResearchersContext);
 
     const {
-        filteredData,
-        selectedResearcher,
-        setSelectedResearcher,
         name,
         setName,
         keywords,
@@ -28,31 +25,6 @@ const Layout = props => {
         researchField,
         setResearchField
      } = researchersContext;
-
-
-
-    // let filteredData = [...researchers];
-
-
-
-    // useEffect(() => {
-    //     fetch("api/researcher/search/all")
-    //         .then((res) => res.json())
-    //         .then(
-    //             (result) => {
-    //                 setIsLoaded(true);
-    //                 setResearchers(result.researchers);
-    //             },
-    //             // Note: it's important to handle errors here
-    //             // instead of a catch() block so that we don't swallow
-    //             // exceptions from actual bugs in components.
-    //             (error) => {
-    //                 setIsLoaded(true);
-    //                 setError(error);
-    //             }
-    //         );
-    // }, []);
-
 
     return (
         <>

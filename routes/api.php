@@ -17,9 +17,12 @@ use App\Http\Resources\ResearcherCollection;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Login URL for REACT
+Route::post('reactlogin',[App\Http\Controllers\UserController::class,'login']);
 
 
 Route::get('researchers', [App\Http\Controllers\ResearcherController::class, 'index']);

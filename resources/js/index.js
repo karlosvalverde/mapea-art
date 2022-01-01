@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route } from "react-router-dom";
-// import Main from "./router"
+import { BrowserRouter } from "react-router-dom";
+// import * as serviceWorker from
 
 import App from "./components/App";
 
