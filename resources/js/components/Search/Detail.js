@@ -1,23 +1,42 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ResearchersContext } from "../../context";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, navigation, Link } from "react-router-dom";
 
 export default function Detail() {
     const researchersContext = useContext(ResearchersContext);
     const {
         selectedResearcher,
         isLoaded,
+        researchers,
+        didRefresh,
+        setDidRefresh,
+        refreshHandler
      } = researchersContext;
 
+
+
+    useEffect(() => {
+        window.addEventListener("beforeunload", refreshHandler);
+        return () => {
+            setDidRefresh(false);
+            window.removeEventListener("beforeunload", refreshHandler);
+        };
+    }, []);
+
     if (!isLoaded) {
-        console.log(selectedResearcher);
         return <h1 className="text-secondary">Carregando...</h1>
     }
 
     return (
         <>
             <div className="row mb-3 w-100 sticky-top bg-dark">
-                <Link className="link-secondary" to="/" onClick={() => {window.location.href="/"}}>&larr; Voltar</Link>
+                <Link className="link-secondary" to="/"
+                onClick={() => {
+                    if (didRefresh) {
+                        window.location.href="/";
+                    }
+                }}
+                >&larr; Voltar</Link>
             </div>
             <div className="text-secondary text-break">
                 <div><span className="bg-secondary p-1 px-2 text-dark mb-3">nome</span><br/>

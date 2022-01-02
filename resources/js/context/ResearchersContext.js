@@ -1,5 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import * as axios from "axios";
+import { get } from "lodash";
 
 export const Context = createContext({});
 
@@ -7,13 +9,13 @@ export const Provider = props => {
 
     // Initial values are obtained from the props
     const {
-        researchers: initialResearchers,
+        researchers: initialResearcher,
         selectedResearcher: initialSelectedResearcher,
         children
     } = props;
 
     // Use State to keep the values
-    const [researchers, setResearchers] = useLocalStorage("researchers" , initialResearchers);
+    const [researchers, setResearchers] = useLocalStorage("researchers" , initialResearcher);
     const [selectedResearcher, setSelectedResearcher] = useLocalStorage("selectedResearcher", initialSelectedResearcher);
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -23,6 +25,8 @@ export const Provider = props => {
     const [university, setUniversity] = useLocalStorage("university", "");
     const [role, setRole] = useLocalStorage("role", "");
     const [researchField, setResearchField] = useLocalStorage("researchField", "");
+    const [didRefresh, setDidRefresh] = useLocalStorage("didRefresh", false);
+    const refreshHandler = () => { setDidRefresh(true) };
 
     // Make the context object:
     const researchersContext = {
@@ -43,26 +47,30 @@ export const Provider = props => {
         role,
         setRole,
         researchField,
-        setResearchField
+        setResearchField,
+        didRefresh,
+        setDidRefresh,
+        refreshHandler
     };
 
     useEffect(() => {
-        fetch("api/researcher/search/all")
-            .then((res) => res.json())
-            .then(
-                (result) => {
-                    setIsLoaded(true);
-                    setResearchers(result.researchers);
-                },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
-                // exceptions from actual bugs in components.
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            );
-    }, []);
+        const url = "api/researcher/search/all";
+
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url);
+                const json = await response.json();
+                setIsLoaded(true);
+                setResearchers(json.researchers);
+            }   catch (error) {
+                setIsLoaded(true);
+                setError(error);
+            }
+        };
+
+        fetchData();
+
+    },[]);
 
     // pass the value in provider and return
     return <Context.Provider value={researchersContext}>{children}</Context.Provider>;

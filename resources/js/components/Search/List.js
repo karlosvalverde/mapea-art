@@ -20,9 +20,11 @@ const List = props => {
         researchField
      } = researchersContext;
 
-     let filteredData = [...researchers];
+    // localStorage.getItem("researchers");
 
-     const handleFilter = (data, key, value) => {
+    let filteredData = [...researchers];
+
+    const handleFilter = (data, key, value) => {
         return data.filter(item => item[key] == value);
     };
 

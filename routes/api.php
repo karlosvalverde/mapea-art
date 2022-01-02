@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Researcher;
 use App\Http\Resources\ResearcherCollection;
+use App\Http\Controllers\UserController;
 
 
 /*
@@ -22,7 +23,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 // Login URL for REACT
-Route::post('reactlogin',[App\Http\Controllers\UserController::class,'login']);
+Route::post('login',[App\Http\Controllers\UserController::class,'test']);
 
 
 Route::get('researchers', [App\Http\Controllers\ResearcherController::class, 'index']);

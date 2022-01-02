@@ -14,4 +14,5 @@ use App\Models\Researcher;
 |
 */
 
+// Auth::routes();
 Route::view("/{path?}", "app")->where('path', '([A-z\d\-\/_.]+)?');
