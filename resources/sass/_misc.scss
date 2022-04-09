@@ -1,0 +1,12 @@
+.has-pointer {
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
+}
+
+::selection {
+    background-color: var(--bs-dark);
+    color: $secondary;
+}
